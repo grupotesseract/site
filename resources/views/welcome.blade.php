@@ -40,7 +40,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Tesseract</div>
+                <div class="title">Tesseract autopull</div>
             </div>
         </div>
     </body>
