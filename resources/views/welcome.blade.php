@@ -1,47 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tesseract</title>
+<title>Tesseract</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-                background-color: #101010;
-                color:white;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
+        <link rel="stylesheet" href="css/app.css"> 
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Tesseract pull</div>
-            </div>
+        <div class="container header-img">
+            <section class="cd-intro">
+                <h1 class="cd-headline letters type">
+                    <span>Nós criamos</span> 
+                    <span class="cd-words-wrapper waiting">
+                        <b class="is-visible">sites</b>
+                        <b>sistemas</b>
+                        <b>inteligência</b>
+                    </span>
+                </h1>
+            </section> 
         </div>
+
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/wordrotate.js"></script>
     </body>
 </html>
