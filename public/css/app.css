@@ -535,15 +535,20 @@ xpush
     opacity: 0;
     transform: translateX(100%); } }
 
+@font-face {
+  font-family: 'Jappokki';
+  src: url("font/jappokki-regular.eot");
+  src: url("font/jappokki-regular.eot?#iefix") format("embedded-opentype"), url("font/jappokki-regular.woff") format("woff"), url("font/jappokki-regular.ttf") format("truetype"), url("font/jappokki-regular.svg#Jappokki") format("svg"); }
+
 body {
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
   color: white;
   background-color: #0d0d0d; }
 
 .header-img {
+  font-family: 'Jappokki', Helvetica, Arial;
   background-image: url("/img/bighero.jpg");
   background-position: center center;
   position: relative;

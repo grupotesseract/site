@@ -1,16 +1,22 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "wordrotate";
 
+@font-face {
+  font-family: 'Jappokki';
+  src: url('font/jappokki-regular.eot');
+  src: url('font/jappokki-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('font/jappokki-regular.woff') format('woff'), /* Pretty Modern Browsers */ url('font/jappokki-regular.ttf')  format('truetype'), /* Safari, Android, iOS */ url('font/jappokki-regular.svg#Jappokki') format('svg');
+  }
+
 body {
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
-    font-family: "Source Sans Pro", sans-serif;
     color: white;
     background-color: #0d0d0d;
 
 }
 .header-img {
+	font-family: 'Jappokki', Helvetica, Arial;
     background-image: url("/img/bighero.jpg");
     background-position: center center;
     position: relative;
