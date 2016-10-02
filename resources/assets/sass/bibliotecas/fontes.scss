@@ -1,0 +1,81 @@
+/*==============================================================================
+  Biblioteca de FONTES
+==============================================================================*/
+
+/* EdmondSans - Regular */
+@font-face {
+  font-family: 'EdmondSans Regular';
+  src: url('../fonts/edmondsans/regular/edmondsans-regular.eot');
+  src: url('../fonts/edmondsans/regular/edmondsans-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/edmondsans/regular/edmondsans-regular.woff') format('woff'),
+         url('../fonts/edmondsans/regular/edmondsans-regular.ttf') format('truetype'),
+         url('../fonts/edmondsans/regular/edmondsans-regular.svg#EDMONDSANS_REGULAR') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+$font-family-edmondsans-regular: 'EdmondSans Regular', serif, sans-serif;
+
+/* EdmondSans - Medium */
+@font-face {
+  font-family: 'EdmondSans Medium';
+  src: url('../fonts/edmondsans/medium/edmondsans-medium.eot');
+  src: url('../fonts/edmondsans/medium/edmondsans-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/edmondsans/medium/edmondsans-medium.woff') format('woff'),
+         url('../fonts/edmondsans/medium/edmondsans-medium.ttf') format('truetype'),
+         url('../fonts/edmondsans/medium/edmondsans-medium.svg#EDMONDSANS_MEDIUM') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+$font-family-edmondsans-medium: 'EdmondSans Medium', serif, sans-serif;
+
+/* EdmondSans - Bold */
+@font-face {
+  font-family: 'EdmondSans Bold';
+  src: url('../fonts/edmondsans/bold/edmondsans-bold.eot');
+  src: url('../fonts/edmondsans/bold/edmondsans-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/edmondsans/bold/edmondsans-bold.woff') format('woff'),
+         url('../fonts/edmondsans/bold/edmondsans-bold.ttf') format('truetype'),
+         url('../fonts/edmondsans/bold/edmondsans-bold.svg#EDMONDSANS_BOLD') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+$font-family-edmondsans-bold: 'EdmondSans Bold', serif, sans-serif;
+
+/* Jaapokki - Regular */
+@font-face {
+  font-family: 'Jaapokki Regular';
+  src: url('../fonts/jaapokki/regular/jaapokki-regular.eot');
+  src: url('../fonts/jaapokki/regular/jaapokki-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jaapokki/regular/jaapokki-regular.woff') format('woff'),
+         url('../fonts/jaapokki/regular/jaapokki-regular.ttf') format('truetype'),
+         url('../fonts/jaapokki/regular/jaapokki-regular.svg#JAAPOKKI_REGULAR') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+$font-family-jaapokki-regular: 'Jaapokki Regular', serif, sans-serif;
+
+/* Jaapokki - Enchance */
+@font-face {
+  font-family: 'Jaapokki Enchance';
+  src: url('../fonts/jaapokki/enchance/jaapokki-enchance.eot');
+  src: url('../fonts/jaapokki/enchance/jaapokki-enchance.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jaapokki/enchance/jaapokki-enchance.woff') format('woff'),
+         url('../fonts/jaapokki/enchance/jaapokki-enchance.ttf') format('truetype'),
+         url('../fonts/jaapokki/enchance/jaapokki-enchance.svg#JAAPOKKI_ENCHANCE') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+$font-family-jaapokki-enchance: 'Jaapokki Enchance', serif, sans-serif;
+
+/* Jaapokki - Subtract */
+@font-face {
+  font-family: 'Jaapokki Subtract';
+  src: url('../fonts/jaapokki/subtract/jaapokki-subtract.eot');
+  src: url('../fonts/jaapokki/subtract/jaapokki-subtract.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jaapokki/subtract/jaapokki-subtract.woff') format('woff'),
+         url('../fonts/jaapokki/subtract/jaapokki-subtract.ttf') format('truetype'),
+         url('../fonts/jaapokki/subtract/jaapokki-subtract.svg#JAAPOKKI_SUBTRACT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+$font-family-jaapokki-subtract: 'Jaapokki Subtract', serif, sans-serif;

@@ -1,17 +1,18 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bibliotecas/*";
 @import "wordrotate";
 
 body {
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Jaapokki Regular", sans-serif;
     color: white;
     background-color: #0d0d0d;
 
 }
 .header-img {
-    background-image: url("/img/bighero.jpg");
+    background-image: url("/img/jpg/bighero.jpg");
     background-position: center center;
     position: relative;
     width: 100%;

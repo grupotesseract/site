@@ -1,0 +1,63 @@
+/*==============================================================================
+  CORES
+==============================================================================*/
+
+/*===================
+  CORES GENÉRICAS
+===================*/
+$cor-branco:rgb(255,255,255);
+$cor-preto:rgb(0,0,0);
+
+/*===================
+  CORES
+  * Usar -1, -2, -3 para n tom abaixo da cor original
+  * Usar -4, -5, -6 para n tom acima da cor original
+===================*/
+
+/* Preto Tesseract [#110F0D] */
+$cor-preto-tesseract-1:rgb(123,109,113);
+$cor-preto-tesseract-2:rgb(94,83,86);
+$cor-preto-tesseract-3:rgb(64,57,59);
+$cor-preto-tesseract:rgb(17,15,13);
+$cor-preto-tesseract-4:rgb(31,27,28);
+$cor-preto-tesseract-5:rgb(26,23,24);
+$cor-preto-tesseract-6:rgb(22,19,20);
+
+/* Cinza Claro Tesseract [#EEEEED] */
+$cor-cinza-claro-tesseract:rgb(238,238,237);
+$cor-cinza-claro-tesseract-4:rgb(209,209,206);
+$cor-cinza-claro-tesseract-5:rgb(180,180,176);
+$cor-cinza-claro-tesseract-6:rgb(151,151,145);
+
+/* Cinza Escuro Tesseract [#231F20] */
+$cor-cinza-escuro-tesseract-1:rgb(123,109,113);
+$cor-cinza-escuro-tesseract-2:rgb(94,83,86);
+$cor-cinza-escuro-tesseract-3:rgb(64,57,59);
+$cor-cinza-escuro-tesseract:rgb(35,31,32);
+
+/* Verde Sucesso [#6BCCA2] */
+$cor-verde-1:rgb(163,223,197);
+$cor-verde-2:rgb(144,217,185);
+$cor-verde-3:rgb(126,210,174);
+$cor-verde:rgb(107,204,162);
+$cor-verde-4:rgb(78,194,144);
+$cor-verde-5:rgb(60,173,124);
+$cor-verde-6:rgb(50,145,104);
+
+/* Amarelo Aviso [#E8C517] */
+$cor-amarelo-1:rgb(241,219,110);
+$cor-amarelo-2:rgb(238,212,81);
+$cor-amarelo-3:rgb(235,204,52);
+$cor-amarelo:rgb(232,197,23);
+$cor-amarelo-4:rgb(203,172,20);
+$cor-amarelo-5:rgb(174,148,17);
+$cor-amarelo-6:rgb(145,123,14);
+
+/* Vermelho Erro [#EF2C42] */
+$cor-vermelho-1:rgb(245,123,137);
+$cor-vermelho-2:rgb(243,97,113);
+$cor-vermelho-3:rgb(241,70,90);
+$cor-vermelho:rgb(239,44,66);
+$cor-vermelho-4:rgb(230,17,41);
+$cor-vermelho-5:rgb(197,15,36);
+$cor-vermelho-6:rgb(164,12,30);
