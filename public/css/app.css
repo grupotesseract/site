@@ -1,3 +1,72 @@
+@charset "UTF-8";
+/*==============================================================================
+  CORES
+==============================================================================*/
+/*===================
+  CORES GENÉRICAS
+===================*/
+/*===================
+  CORES
+  * Usar -1, -2, -3 para n tom abaixo da cor original
+  * Usar -4, -5, -6 para n tom acima da cor original
+===================*/
+/* Preto Tesseract [#110F0D] */
+/* Cinza Claro Tesseract [#EEEEED] */
+/* Cinza Escuro Tesseract [#231F20] */
+/* Verde Sucesso [#6BCCA2] */
+/* Amarelo Aviso [#E8C517] */
+/* Vermelho Erro [#EF2C42] */
+/*==============================================================================
+  Biblioteca de FONTES
+==============================================================================*/
+/* EdmondSans - Regular */
+@font-face {
+  font-family: 'EdmondSans Regular';
+  src: url("../fonts/edmondsans/regular/edmondsans-regular.eot");
+  src: url("../fonts/edmondsans/regular/edmondsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/edmondsans/regular/edmondsans-regular.woff") format("woff"), url("../fonts/edmondsans/regular/edmondsans-regular.ttf") format("truetype"), url("../fonts/edmondsans/regular/edmondsans-regular.svg#EDMONDSANS_REGULAR") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* EdmondSans - Medium */
+@font-face {
+  font-family: 'EdmondSans Medium';
+  src: url("../fonts/edmondsans/medium/edmondsans-medium.eot");
+  src: url("../fonts/edmondsans/medium/edmondsans-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/edmondsans/medium/edmondsans-medium.woff") format("woff"), url("../fonts/edmondsans/medium/edmondsans-medium.ttf") format("truetype"), url("../fonts/edmondsans/medium/edmondsans-medium.svg#EDMONDSANS_MEDIUM") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* EdmondSans - Bold */
+@font-face {
+  font-family: 'EdmondSans Bold';
+  src: url("../fonts/edmondsans/bold/edmondsans-bold.eot");
+  src: url("../fonts/edmondsans/bold/edmondsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/edmondsans/bold/edmondsans-bold.woff") format("woff"), url("../fonts/edmondsans/bold/edmondsans-bold.ttf") format("truetype"), url("../fonts/edmondsans/bold/edmondsans-bold.svg#EDMONDSANS_BOLD") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Jaapokki - Regular */
+@font-face {
+  font-family: 'Jaapokki Regular';
+  src: url("../fonts/jaapokki/regular/jaapokki-regular.eot");
+  src: url("../fonts/jaapokki/regular/jaapokki-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/jaapokki/regular/jaapokki-regular.woff") format("woff"), url("../fonts/jaapokki/regular/jaapokki-regular.ttf") format("truetype"), url("../fonts/jaapokki/regular/jaapokki-regular.svg#JAAPOKKI_REGULAR") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Jaapokki - Enhance */
+@font-face {
+  font-family: 'Jaapokki Enhance';
+  src: url("../fonts/jaapokki/enchance/jaapokki-enhance.eot");
+  src: url("../fonts/jaapokki/enchance/jaapokki-enhance.eot?#iefix") format("embedded-opentype"), url("../fonts/jaapokki/enchance/jaapokki-enhance.woff") format("woff"), url("../fonts/jaapokki/enchance/jaapokki-enhance.ttf") format("truetype"), url("../fonts/jaapokki/enchance/jaapokki-enhance.svg#JAAPOKKI_ENHANCE") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Jaapokki - Subtract */
+@font-face {
+  font-family: 'Jaapokki Subtract';
+  src: url("../fonts/jaapokki/subtract/jaapokki-subtract.eot");
+  src: url("../fonts/jaapokki/subtract/jaapokki-subtract.eot?#iefix") format("embedded-opentype"), url("../fonts/jaapokki/subtract/jaapokki-subtract.woff") format("woff"), url("../fonts/jaapokki/subtract/jaapokki-subtract.ttf") format("truetype"), url("../fonts/jaapokki/subtract/jaapokki-subtract.svg#JAAPOKKI_SUBTRACT") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* -------------------------------- 
 
 Primary style
@@ -535,21 +604,17 @@ xpush
     opacity: 0;
     transform: translateX(100%); } }
 
-@font-face {
-  font-family: 'Jappokki';
-  src: url("font/jappokki-regular.eot");
-  src: url("font/jappokki-regular.eot?#iefix") format("embedded-opentype"), url("font/jappokki-regular.woff") format("woff"), url("font/jappokki-regular.ttf") format("truetype"), url("font/jappokki-regular.svg#Jappokki") format("svg"); }
-
 body {
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
+  font-family: "Jaapokki Regular", serif, sans-serif;
   color: white;
   background-color: #0d0d0d; }
 
 .header-img {
-  font-family: 'Jappokki', Helvetica, Arial;
-  background-image: url("/img/bighero.jpg");
+  background-image: url("/img/jpg/bighero.jpg");
+  font-family: "Jaapokki Regular", serif, sans-serif;
   background-position: center center;
   position: relative;
   width: 100%;
