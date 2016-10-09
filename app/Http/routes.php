@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('team-tesseract', 'UsersController', ['except' => 'show']);
+Route::group(['prefix' => 'team-tesseract'], function () {
+    Route::resource('roles', 'Users\RolesController', ['only' => ['index', 'store']]);
+    Route::resource('skills', 'Users\SkillsController', ['only' => ['index', 'store']]);
+});
