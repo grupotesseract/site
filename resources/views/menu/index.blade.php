@@ -1,0 +1,15 @@
+<aside id="menu" class="well sidebar-nav">
+    <h4><i class="fa fa-home"></i> <b>Geral</b></h4>
+    <ul class="nav nav-pills nav-stacked">
+        <li><a href="{{ url('team-tesseract') }}">Listar</a></li>
+    </ul>
+
+    <hr>
+
+    <h4><i class="fa fa-group"></i> <b>Cadastros</b></h4>
+    <ul class="nav nav-pills nav-stacked">
+        <li><a href="{{ url('team-tesseract/skills') }}">Conhecimentos</a></li>
+        <li><a href="{{ url('team-tesseract/roles') }}">Funções</a></li>
+        <li><a href="{{ url('team-tesseract/create') }}">Time</a></li>
+    </ul>
+</aside>

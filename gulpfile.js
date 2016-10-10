@@ -12,5 +12,13 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.styles([
+        '/../../../node_modules/bootstrap/dist/css/bootstrap.css',
+        '/../../../node_modules/font-awesome/css/font-awesome.css',
+        '/../../../node_modules/select2/dist/css/select2.css',
+      ], 'public/css/all.css');
+
+    mix.browserify('app.js');
+
+    mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
 });
