@@ -9,7 +9,6 @@
                     <th width="1%">#</th>
                     <th>Nome</th>
                     <th>E-mail</th>
-                    <th>Redes Sociais</th>
                     <th width="5%">Ações</th>
                 </tr>
             </thead>
@@ -19,7 +18,6 @@
                         <td>{{ $key + 1 + (($users->currentPage()-1) * $users->perPage()) }}</td>
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
-                        <td>{{ $user->social->github }}</td>
                         <td class="text-center">
                             <a href="{{ route('team-tesseract.edit', ['userId' => $user->id]) }}" title="Editar">
                                 <i class="fa fa-edit"></i>

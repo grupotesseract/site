@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-use App\Http\Requests;
+use App\Http\Requests\UserEditRequest;
+use App\Http\Requests\UserCreateRequest;
 use App\Repositories\UserRepository as User;
 
 class UsersController extends Controller
@@ -18,6 +18,7 @@ class UsersController extends Controller
     public function index()
     {
         $users = $this->users->getAllPaginated(10);
+
         return view('users.index', compact('users'));
     }
 
@@ -26,7 +27,7 @@ class UsersController extends Controller
         return view('users.create');
     }
 
-    public function store(Request $request)
+    public function store(UserCreateRequest $request)
     {
         $this->users->saveUser($request->all());
 
@@ -42,7 +43,7 @@ class UsersController extends Controller
         return view('users.edit', compact('user'));
     }
 
-    public function update(Request $request)
+    public function update(UserEditRequest $request)
     {
         $this->users->updateUser($request->all());
 

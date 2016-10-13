@@ -7,7 +7,7 @@
             {{ method_field('PUT') }}
             {!! csrf_field() !!}
 
-            <input type="hidden" name="user" value="{{ $user->id }}">
+            <input type="hidden" name="id" value="{{ $user->id }}">
 
             <div class="row">
                 <div class="col-md-6">
@@ -72,12 +72,12 @@
             <br>
             <legend>Conhecimentos</legend>
             <div class="form-group">
-                <select name="skills[]" id="skills[]" class="form-control add-select2-tags" required multiple>
+                <select name="skills[]" id="skills[]" class="form-control add-select2" required multiple>
                     @foreach ($skills as $id => $skillName)
                         <option value="{{ $id }}"
 
                             @if (old('skills'))
-                                {{ in_array($skillName, old("skills")) ? 'selected' : '' }}
+                                {{ in_array($id, old("skills")) ? 'selected' : '' }}
                             @else
                                 @foreach ($user->curriculum->skills->toArray() as $userSkill)
                                      {{ in_array($skillName, $userSkill) ? 'selected' : '' }}

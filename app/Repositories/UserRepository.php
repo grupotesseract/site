@@ -42,7 +42,7 @@ class UserRepository
 
     public function updateUser($data)
     {
-        $user = User::findOrFail($data['user']);
+        $user = User::findOrFail($data['user_id']);
 
         $user->update($data);
         $user->social->update($data['social']);

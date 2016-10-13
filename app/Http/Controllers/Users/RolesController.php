@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Users;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
+use App\Http\Requests\RoleRequest;
 use App\Http\Controllers\Controller;
 use App\Repositories\RoleRepository as Roles;
 
@@ -21,7 +21,7 @@ class RolesController extends Controller
         return view('users.roles.index');
     }
 
-    public function store(Request $request)
+    public function store(RoleRequest $request)
     {
         $this->roles->saveRole($request->all());
 
