@@ -24,7 +24,7 @@ class RoleRequest extends Request
     public function rules()
     {
         return [
-            'name' => 'required|alpha_dash|unique:roles'
+            'name' => 'required|unique:roles'
         ];
     }
 }

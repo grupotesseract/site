@@ -24,7 +24,7 @@ class SkillRequest extends Request
     public function rules()
     {
         return [
-            'name' => 'required|alpha_dash|unique:skills'
+            'name' => 'required|unique:skills'
         ];
     }
 }
