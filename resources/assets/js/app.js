@@ -1,4 +1,4 @@
-window.$ = window.jQuery= require('jquery');
+window.$ = window.jQuery = require('jquery');
 require('bootstrap');
 window.select2 = require('select2');
 require('./vendor/wordrotate');
@@ -11,6 +11,4 @@ $('#menu li').each(function () {
     }
 });
 
-$('.add-select2-tags').select2({
-  tags: true
-});
+$('.add-select2').select2();
