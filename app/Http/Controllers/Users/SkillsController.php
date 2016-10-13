@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Users;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
+use App\Http\Requests\SkillRequest;
 use App\Http\Controllers\Controller;
 use App\Repositories\SkillRepository as Skills;
 
@@ -21,7 +21,7 @@ class SkillsController extends Controller
         return view('users.skills.index');
     }
 
-    public function store(Request $request)
+    public function store(SkillRequest $request)
     {
         $this->skills->saveSkill($request->all());
 
