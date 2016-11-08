@@ -16,9 +16,15 @@ elixir(function(mix) {
         '/../../../node_modules/bootstrap/dist/css/bootstrap.css',
         '/../../../node_modules/font-awesome/css/font-awesome.css',
         '/../../../node_modules/select2/dist/css/select2.css',
-      ], 'public/css/all.css');
+        '/../../../node_modules/tether-drop/dist/css/drop-theme-arrows.css',
+        '/../../../node_modules/tether-tooltip/dist/css/tooltip-theme-arrows.css',
+      ], 'public/css/app.css');
+
+    mix.sass([
+    	'tesseract.scss'
+    ], 'public/css/tesseract.css');
 
     mix.browserify('app.js');
 
-    mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
+    mix.copy('node_modules/font-awesome/fonts', 'public/fonts/fontawesome');
 });

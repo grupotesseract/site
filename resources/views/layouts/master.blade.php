@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Cadastramento de Skills do Time Tesseract</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-        <link href="{!! asset('css/all.css') !!}" rel="stylesheet" type="text/css">
-    </head>
-    <body style="background-color: #eee">
+@include('head')
+    <body style="background-color: #EEE">
         <div class="container">
 
             <div class="row">
@@ -35,7 +26,5 @@
                     @yield('content')
                 </div>
             </div>
-        </div>
-        <script src="{!! asset('js/app.js') !!}"></script>
-    </body>
-</html>
+        </div>    
+@include('footer')

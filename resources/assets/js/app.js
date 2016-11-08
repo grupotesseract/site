@@ -1,6 +1,10 @@
 window.$ = window.jQuery = require('jquery');
 require('bootstrap');
 window.select2 = require('select2');
+window.Drop = require('tether-drop');
+window.Tooltip = require('tether-tooltip');
+window.sr = require('scrollreveal');
+window.smoothScroll = require('smooth-scroll');
 require('./vendor/wordrotate');
 
 
