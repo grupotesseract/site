@@ -5,6 +5,7 @@ window.Drop = require('tether-drop');
 window.Tooltip = require('tether-tooltip');
 window.sr = require('scrollreveal');
 window.smoothScroll = require('smooth-scroll');
+window.masonry = require('masonry-layout');
 require('./vendor/wordrotate');
 
 

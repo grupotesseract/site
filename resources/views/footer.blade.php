@@ -1,15 +1,32 @@
-		<footer class="container">
-	        <div class="row">
-	            <div class="col-md-offset-4 col-md-4">
-	              <a><img class="logo-footer" src="img/logo_medio.png" /></a>
-	                <!--<ul class="list-inline social-buttons">
-	                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-	                    </li>
-	                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-	                    </li>
-	                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
-	                    </li>
-	                </ul>-->
+		<footer id="footer" class="row">
+	        <div class="container">
+	            <div class="col-md-4 offset-md-4">
+	            	<div class="row text-xs-center">
+	            		<a href="{{ url('/') }}">
+	              			<img class="img-fluid mt-3 mb-4 footer-logo" src="img/svg/logo-tesseract-preto.svg"/>
+	              		</a>
+	            	</div>
+	            </div>
+	            <div class="col-md-2 offset-md-5">
+	              	<div class="row text-xs-center">
+		                <ul class="inline-social-media">
+		                	<li class="inline-block-social-media">
+		                		<a class="pl-1 pr-1" href="{{ env('SOCIAL_MEDIA_GITHUB') }}" target="_blank">
+		                			<i class="fa fa-github"></i>
+		                		</a>
+		                    </li>
+		                    <li class="inline-block-social-media">
+		                    	<a class="pl-1 pr-1" href="{{ env('SOCIAL_MEDIA_FACEBOOK') }}" target="_blank">
+		                    		<i class="fa fa-facebook"></i>
+		                    	</a>
+		                    </li>
+		                    <li class="inline-block-social-media">
+		                    	<a class="pl-1 pr-1" href="{{ env('SOCIAL_MEDIA_LINKEDIN') }}" target="_blank">
+		                    		<i class="fa fa-linkedin"></i>
+		                    	</a>
+		                    </li>
+		                </ul>
+		            </div>
 	        	</div>
 	        </div>
 		</footer>

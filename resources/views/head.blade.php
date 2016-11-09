@@ -3,7 +3,7 @@
   <head>
 
       {{-- Título da Plataforma --}}
-        <title>Grupo Tesseract - </title>
+        <title>Grupo Tesseract - @yield('page-title')</title>
 
       {{-- Codificação de Caracteres --}}
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -74,6 +74,7 @@
 
       {{-- Scripts - JS --}}
         <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/tesseract.js') }}"></script>
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -82,3 +83,8 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
   </head>
+  <body>
+  @yield('page-content')
+
+  {{-- Incluindo FOOTER --}}
+  @include('footer')

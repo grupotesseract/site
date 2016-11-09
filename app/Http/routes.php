@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('layouts/welcome');
+    return view('layouts.home');
 });
 
 Route::resource('team-tesseract', 'UsersController', ['except' => 'show']);

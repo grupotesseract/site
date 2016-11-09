@@ -20,11 +20,15 @@ elixir(function(mix) {
         '/../../../node_modules/tether-tooltip/dist/css/tooltip-theme-arrows.css',
       ], 'public/css/app.css');
 
+    mix.scripts([
+        'vendor/wordrotate.js'
+    ], 'public/js/tesseract.js');
+
     mix.sass([
     	'tesseract.scss'
     ], 'public/css/tesseract.css');
 
     mix.browserify('app.js');
 
-    mix.copy('node_modules/font-awesome/fonts', 'public/fonts/fontawesome');
+    mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
 });
