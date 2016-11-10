@@ -21,6 +21,7 @@ elixir(function(mix) {
       ], 'public/css/app.css');
 
     mix.scripts([
+        '/../../../node_modules/jquery/dist/jquery.min.js',
         'vendor/wordrotate.js'
     ], 'public/js/tesseract.js');
 
