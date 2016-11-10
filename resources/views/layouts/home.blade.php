@@ -5,34 +5,7 @@
 @section('page-content')
 
         {{-- Seção MENU --}}
-        <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo_medio_branco.png"  />Tesseract</a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#portfolio">projetos</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#equipe">equipe</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contato">contato</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-        </nav>
-        {{-- Fim da Seção MENU --}}
+            @include('menu.top')
 
         {{-- Seção CABEÇALHO --}}
         <header class="container header-img">
