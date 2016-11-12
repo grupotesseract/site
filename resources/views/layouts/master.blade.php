@@ -5,9 +5,7 @@
 
         <div class="row">
             <div class="col-md-12 text-center">
-                <legend>
-                    <h1>Grupo Tesseract</h1>
-                </legend>
+                <h1>Grupo Tesseract</h1>
             </div>
         </div>
 
@@ -20,7 +18,7 @@
         <div class="row">
 
             <div class="col-md-3">
-                @include('menu.index')
+                @include('menu.menu-admin-panel')
             </div>
 
             <div class="col-md-9">

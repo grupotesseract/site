@@ -3,6 +3,10 @@
 return [
 	'page-title_home' => 'Desenvolvimento',
 	'page-title_panel' => 'Área Administrativa',
+	'menu_institucional' => 'Institucional',
+	'menu_portfolio' => 'Portfolio',
+	'menu_equipe' => 'Equipe',
+	'menu_contato' => 'Contato',
 	'title_equipe'	=> 'Equipe',
 	'title_contato' => 'Contato',
 	'label_nome' => 'Nome',

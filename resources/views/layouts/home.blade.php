@@ -5,7 +5,7 @@
 @section('page-content')
 
         {{-- Seção MENU --}}
-            @include('menu.top')
+            @include('menu.menu-home')
 
         {{-- Seção CABEÇALHO --}}
         <header class="container header-img">
@@ -17,9 +17,10 @@
                         <b>sistemas</b>
                         <b>aplicativos</b>
                         <b>conexões</b>
+                        <b>inteligência</b>
                         <b>segurança</b>
+                        <b>inovação</b>
                         <b>tecnologia</b>
-                        <b>inteligência.</b>
                     </span>
                 </h1>
             </div>
