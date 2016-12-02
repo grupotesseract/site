@@ -8,7 +8,7 @@
             @include('menu.menu-home')
 
         {{-- Seção CABEÇALHO --}}
-        <header class="container header-img">
+        <header class="container header-tesseract">
             <div class="cd-intro">
                 <h1 class="cd-headline letters type">
                     <span>Nós criamos</span>
@@ -35,10 +35,10 @@
 
         {{-- Seção EQUIPE --}}
             @include('home.team.index')
-        
+
         {{-- Seção CONTATO --}}
             @include('home.contact.index')
-        
+
 
         <div class="separador-footer"></div>
 
