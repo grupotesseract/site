@@ -1,10 +1,13 @@
 @extends('head')
 
-@section('page-title', trans('global.page-title_panel'))
-    <div class="container" style="background-color: #EEE">
+@section('page-title', trans('global.page-title_home'))
+
+@section('page-content')
+
+    <div class="container-fluid area-admin">
 
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 p-1">
                 <h1>Grupo Tesseract</h1>
             </div>
         </div>
