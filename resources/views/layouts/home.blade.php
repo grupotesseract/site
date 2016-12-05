@@ -8,7 +8,6 @@
             @include('menu.menu-home')
 
         {{-- Seção CABEÇALHO --}}
-}
         <div class="row">
           <header class="container header-tesseract">
               <div class="cd-intro">
@@ -35,17 +34,12 @@
             @include('home.institutional.index')
         </div>
 
-        <div class="row">
         {{-- Seção PORTFOLIO --}}
             @include('home.portfolio.index')
-        </div>
 
-        <div class="row">
         {{-- Seção EQUIPE --}}
             @include('home.team.index')
-        </div>
 
-        <div class="row">
         {{-- Seção CONTATO --}}
             @include('home.contact.index')
         </div>

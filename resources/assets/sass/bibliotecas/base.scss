@@ -34,6 +34,45 @@ body {
   height: 50vh;
   float: left;
 }
+#equipe {
+  background-color: #fffcf5;
+  color: #1d1d1d;
+}
+#contato {
+  color: #fffcf5;
+  input,
+  textarea {
+    border-radius: 0px;
+  }
+  label {
+    font-size: 2em;
+    margin-bottom: 0px;
+  }
+  input[type="submit"] {
+    background-color:transparent;
+    border: none;
+    color: #fffcf5;
+    float:right;
+    font-size: 2em;
+    cursor: pointer;
+  }
+}
+.contato-container {
+  position: relative;
+  padding-top: 1em;
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    background-color: #eee;
+    background-image: url('/img/png/bgcells.png');
+    background-repeat: repeat;
+    background-size: auto 100%;
+    height:20px;
+  }
+}
 
 #footer{
   background-color: $cor-branco;
