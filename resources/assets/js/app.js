@@ -19,6 +19,17 @@ $('#menu li').each(function () {
 
 $('.add-select2').select2();
 
+function revealMenuOnScroll() {                            
+	$(window).scroll(function(){                          
+	    if($(this).scrollTop() > 200) {
+	        $('#menu-principal').fadeIn(500);
+	    } else {
+	        $('#menu-principal').fadeOut(500);
+	    }
+	});
+}
+
 $(document).ready(function() {
+	revealMenuOnScroll();
 	smoothScroll.init();
 });

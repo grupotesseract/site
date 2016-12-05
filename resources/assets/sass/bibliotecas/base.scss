@@ -9,23 +9,41 @@ body {
   font-size: 14px;
   font-family: $font-family-jaapokki-regular;
   color: white;
-  background-color: #1d1d1d;
+  background-color: #1D1D1D;
 }
 
-#menu-principal{
-  background-color: transparent;
-  .navbar-logo{
-    height: 11vh;
-  }
-  li a{
-    text-transform: lowercase;
-    text-decoration: none;
-    color: $cor-branco;
+#apresentacao{
+  #menu-principal{
+    display: block;
+    background-color: $cor-preto;
+    width: 100vw;
+    height: 100vh;
+    .navbar-logo{
+      text-decoration: none;
+      img{
+        height: 50vh;
+        width: 100%;
+        position: relative;
+        top: 20%;
+        margin: 0 auto;
+      }
+      h1{
+        position: relative;
+        top: 20%;
+        color: $cor-branco;
+        font-size: 5rem;
+      }
+    }
+    ul li a{
+      text-transform: lowercase;
+      text-decoration: none;
+      color: $cor-branco;
+    }
   }
 }
 
 .header-tesseract {
-  background-image: url("/img/jpg/bighero.jpg");
+  background-image: url("/img/jpg/background/bg05.jpg");
   font-family: $font-family-jaapokki-regular;
   background-position: center center;
   padding-top: 10em;

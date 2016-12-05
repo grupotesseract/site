@@ -1,10 +1,11 @@
-<nav id="menu-principal" class="navbar navbar-fixed-top bg-faded">
+<nav id="menu-principal" class="navbar">
   
-  <a class="navbar-brand mb-0" href="{{ url('/') }}">
-      <img class="img-fluid navbar-logo" src="{{ asset('img/svg/logo-tesseract-branco-simples.svg') }}" title="" alt="Tesseract Logo"/>
-      </a>
+  <a class="navbar-logo text-center" href="{{ url('/') }}">
+      <img class="img-fluid" src="{{ asset('img/svg/logo-tesseract-branco-simples.svg') }}" title="" alt="Tesseract Logo"/>
+      <h1>Tesseract</h1>
+  </a>
   
-  <ul class="nav navbar-nav pull-right">
+  <ul class="nav navbar-nav pull-right hidden-xs-up">
     <li class="nav-item active">
       <a class="nav-link" data-scroll href="#institucional">{{ trans('global.menu_institucional') }} <span class="sr-only">(current)</span></a>
     </li>

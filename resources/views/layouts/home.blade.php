@@ -4,11 +4,13 @@
 
 @section('page-content')
 
-        {{-- Seção MENU --}}
-            @include('menu.menu-home')
-
         {{-- Seção CABEÇALHO --}}
-}
+        <div class="row">
+          @include('home.presentation.index')
+        </div>
+        {{-- Fim da Seção CABEÇALHO --}}
+
+        {{-- Seção INTRO --}}
         <div class="row">
           <header class="container header-tesseract">
               <div class="cd-intro">
@@ -28,7 +30,7 @@
               </div>
           </header>
         </div>
-        {{-- Fim da Seção CABEÇALHO --}}
+        {{-- Fim da Seção INTRO --}}
 
         {{-- Seção INSTITUCIONAL --}}
         <div class="row">
