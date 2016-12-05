@@ -1,6 +1,6 @@
 {{-- Seção PORTFOLIO --}}
 <section id="portfolio" class="container">
-  <div class="parallax text-center primeiro-item">
+  <div class="parallax text-center primeiro-item padding-4">
       <div class="info-projeto">
         <h2 class="titulo-trabalho">Song of the sea</h2>
         <h3 class="itens-trabalho text-muted">
@@ -12,7 +12,7 @@
         </h3>
       </div>
   </div>
-  <div class="parallax text-center segundo-item">
+  <div class="parallax text-center segundo-item padding-4">
       <div class="info-projeto">
         <h2 class="titulo-trabalho">Sen to Chihiro</h2>
         <h3 class="itens-trabalho text-muted">

@@ -1,5 +1,5 @@
 {{-- Seção INSTITUCIONAL --}}
-	<section id="institucional" class="container">
+	<section id="institucional" class="container padding-4">
 	    <div class="row">
 	        <div class="col-lg-12 text-center">
 	            <h2 class="institucional-titulo">Tesseract</h2>
