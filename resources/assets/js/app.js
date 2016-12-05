@@ -21,4 +21,11 @@ $('.add-select2').select2();
 
 $(document).ready(function() {
 	smoothScroll.init();
+
+
+  $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 100
+  });
 });

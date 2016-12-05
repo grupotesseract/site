@@ -37,6 +37,17 @@ body {
 #equipe {
   background-color: #fffcf5;
   color: #1d1d1d;
+  img {
+    width:100%;
+  }
+  .conteudo-texto-grande {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  ul { list-style: none; }
+  .grid-item { width: 100px; }
+  .grid-item-2 { width: 200px; }
 }
 #contato {
   color: #fffcf5;

@@ -11,10 +11,10 @@
       <div class="row">
         <div class="container">
           <div class="col-md-8 col-md-offset-2">
-            <ul class="img-list">
+            <ul class="img-list grid">
               {{-- SEÇÃO EQUIPE --}}
               @foreach ($Users as $Membro)
-                <li class="thumbnail-grande">
+                <li class="thumbnail-grande grid-item">
                   <img src="{{ $Membro->fotoURL }}" class="equipe-img-grande" />
                    <span class="conteudo-texto-grande">
                      <span>
