@@ -8,23 +8,26 @@
             @include('menu.menu-home')
 
         {{-- Seção CABEÇALHO --}}
-        <header class="container header-tesseract">
-            <div class="cd-intro">
-                <h1 class="cd-headline letters type">
-                    <span>Nós criamos</span>
-                    <span class="cd-words-wrapper waiting">
-                        <b class="is-visible">sites</b>
-                        <b>sistemas</b>
-                        <b>aplicativos</b>
-                        <b>conexões</b>
-                        <b>inteligência</b>
-                        <b>segurança</b>
-                        <b>inovação</b>
-                        <b>tecnologia</b>
-                    </span>
-                </h1>
-            </div>
-        </header>
+}
+        <div class="row">
+          <header class="container header-tesseract">
+              <div class="cd-intro">
+                  <h1 class="cd-headline letters type">
+                      <span>Nós criamos</span>
+                      <span class="cd-words-wrapper waiting">
+                          <b class="is-visible">sites</b>
+                          <b>sistemas</b>
+                          <b>aplicativos</b>
+                          <b>conexões</b>
+                          <b>inteligência</b>
+                          <b>segurança</b>
+                          <b>inovação</b>
+                          <b>tecnologia</b>
+                      </span>
+                  </h1>
+              </div>
+          </header>
+        </div>
         {{-- Fim da Seção CABEÇALHO --}}
 
         {{-- Seção INSTITUCIONAL --}}
