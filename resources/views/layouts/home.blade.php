@@ -28,16 +28,24 @@
         {{-- Fim da Seção CABEÇALHO --}}
 
         {{-- Seção INSTITUCIONAL --}}
+        <div class="row">
             @include('home.institutional.index')
+        </div>
 
+        <div class="row">
         {{-- Seção PORTFOLIO --}}
             @include('home.portfolio.index')
+        </div>
 
+        <div class="row">
         {{-- Seção EQUIPE --}}
             @include('home.team.index')
+        </div>
 
+        <div class="row">
         {{-- Seção CONTATO --}}
             @include('home.contact.index')
+        </div>
 
 
         <div class="separador-footer"></div>
