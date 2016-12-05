@@ -1,6 +1,8 @@
 @extends('head')
 
 @section('page-title', trans('global.page-title_home'))
+@section('html-classes', 'admin')
+@section('body-classes', 'admin')
 
 @section('page-content')
 
@@ -8,7 +10,7 @@
 
         <div class="row">
             <div class="col-md-12 p-1">
-                <h1>Grupo Tesseract</h1>
+                <a href="/"><h1>Grupo Tesseract</h1></a>
             </div>
         </div>
 

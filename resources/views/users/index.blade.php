@@ -7,15 +7,17 @@
             <thead style="background-color: #337ab7; color: white;">
                 <tr>
                     <th width="1%">#</th>
-                    <th>Nome</th>
-                    <th>E-mail</th>
-                    <th width="5%">Ações</th>
+                    <th width="1%">ID</th>
+                    <th>NOME</th>
+                    <th>E-MAIL</th>
+                    <th width="5%">AÇÕES</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach($users as $key => $user)
                     <tr>
                         <td>{{ $key + 1 + (($users->currentPage()-1) * $users->perPage()) }}</td>
+                        <td>{{ $user->id }}</td>
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
                         <td class="text-center">

@@ -18,7 +18,7 @@ class UserRepository
      */
     public function injectAllUsers($view)
     {
-        return $view->with('Users', User::all());
+        return $view->with('Users', User::inRandomOrder()->get());
     }
 
     /**

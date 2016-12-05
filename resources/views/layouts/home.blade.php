@@ -8,7 +8,7 @@
             @include('menu.menu-home')
 
         {{-- Seção CABEÇALHO --}}
-}
+
         <div class="row">
           <header class="container header-tesseract">
               <div class="cd-intro">
@@ -50,7 +50,12 @@
             @include('home.contact.index')
         </div>
 
-
-        <div class="separador-footer"></div>
-
 @endsection
+
+
+<div class="separador-footer"></div>
+{{-- Incluindo FOOTER --}}
+@section('footer')
+    @include('footer')
+@endsection
+
