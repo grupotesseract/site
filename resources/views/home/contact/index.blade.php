@@ -1,7 +1,8 @@
 {{-- Seção CONTATO --}}
-  <section id="contato" class="container">
+<div class="row contato-container">
+  <section id="contato" class="container padding-t-4">
       <div class="row">
-          <div class="col-lg-12 text-xs-center">
+          <div class="col-lg-12 text-xs-center text-md-left">
               <h2 class="titulo-secao-branco">
                   {{ trans('global.title_contato') }}
               </h2>
@@ -41,4 +42,5 @@
           </div>
       </div>
   </section>
+</div>
 {{-- Fim da Seção CONTATO --}}
