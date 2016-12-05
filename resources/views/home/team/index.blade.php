@@ -11,69 +11,35 @@
         <div class="container">
           <div class="col-md-8 col-md-offset-2">
             <ul class="img-list">
-              <li class="thumbnail-grande"><a href="#">
-                <img src="img/lilo.jpeg" class="equipe-img-grande" />
+
+            {{-- SEÇÃO EQUIPE --}}
+            @foreach ($Users as $Membro)
+              <li class="thumbnail-grande">
+                <img src="{{ $Membro->fotoURL }}" class="equipe-img-grande" />
                  <span class="conteudo-texto-grande">
                    <span>
-                     <h4>Vinicius</h4>
-                     <p>Desenvolvedor</p>
+                     <h4>{{ $Membro->name }}</h4>
+                     <p>{{ $Membro->role->name }}</p>
                    </span>
+                    <ul class="social-links">
+                        @if ($Membro->social->github)
+                            <a href="{{ url($Membro->social->github) }}"><i class="fa fa-github"></i></a>
+                        @endif
+                        @if ($Membro->social->facebook) 
+                            <a href="{{ $Membro->social->facebook }}"><i class="fa fa-facebook"></i></a>
+                        @endif
+                        @if ($Membro->social->portfolio) 
+                            <a href="{{ $Membro->social->portfolio }}"><i class="fa fa-portfolio"></i></a>
+                        @endif
+                        @if ($Membro->social->googleplus) 
+                            <a href="{{ $Membro->social->googleplus }}"><i class="fa fa-googleplus"></i></a>
+                        @endif
+
+
+                    </ul>
                  </span>
-              </a></li>
-              <li class="thumbnail-pequeno"><a href="#">
-                <img src="img/lilo.jpeg" class="equipe-img-pequeno" />
-                 <span class="conteudo-texto-pequeno">
-                   <span>
-                     <h4>Vinicius</h4>
-                     <p>teste</p>
-                   </span>
-                 </span>
-              </a></li>
-              <li class="thumbnail-pequeno"><a href="#">
-                <img src="img/lilo.jpeg" class="equipe-img-pequeno" />
-                 <span class="conteudo-texto-pequeno">
-                   <span>
-                     <h4>Vinicius</h4>
-                     <p>teste</p>
-                   </span>
-                 </span>
-              </a></li>
-              <li class="thumbnail-grande"><a href="#">
-                <img src="img/lilo.jpeg" class="equipe-img-grande" />
-                 <span class="conteudo-texto-grande">
-                   <span>
-                     <h4>Vinicius</h4>
-                     <p>Desenvolvedor</p>
-                   </span>
-                 </span>
-              </a></li>
-              <li class="thumbnail-pequeno"><a href="#">
-                <img src="img/lilo.jpeg" class="equipe-img-pequeno" />
-                 <span class="conteudo-texto-pequeno">
-                   <span>
-                     <h4>Vinicius</h4>
-                     <p>teste</p>
-                   </span>
-                 </span>
-              </a></li>
-              <li class="thumbnail-pequeno"><a href="#">
-                <img src="img/lilo.jpeg" class="equipe-img-pequeno" />
-                 <span class="conteudo-texto-pequeno">
-                   <span>
-                     <h4>Vinicius</h4>
-                     <p>teste</p>
-                   </span>
-                 </span>
-              </a></li>
-              <li class="thumbnail-grande"><a href="#">
-                <img src="img/lilo.jpeg" class="equipe-img-grande" />
-                 <span class="conteudo-texto-grande">
-                   <span>
-                     <h4>Vinicius</h4>
-                     <p>Desenvolvedor</p>
-                   </span>
-                 </span>
-              </a></li>
+                </li>
+            @endforeach
             </ul>
           </div>
         </div>
