@@ -3,13 +3,13 @@
 ==============================================================================*/
 
 body.admin, html.admin {
-    height: 100%;
+    min-height: 100%;
 }
 
 .area-admin {
     background: $cor-cinza-claro-tesseract;
     color: $cor-preto-tesseract;
-    height: 100%;
+    min-height: 100%;
 
     ul.pagination {
         width: 100%;
