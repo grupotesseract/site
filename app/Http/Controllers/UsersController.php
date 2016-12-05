@@ -26,7 +26,7 @@ class UsersController extends Controller
 
     public function index()
     {
-        $users = $this->users->getAllPaginated(3);
+        $users = $this->users->getAllPaginated(15);
 
         return view('users.index', compact('users'));
     }
