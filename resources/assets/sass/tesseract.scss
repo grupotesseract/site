@@ -7,16 +7,18 @@
 @import "bibliotecas/utilitarios";
 @import "bibliotecas/admin";
 
+@import "bibliotecas/base";
+
 /*==================================================
 =            Bootstrap 4 Media Queries             =
 ==================================================*/
 
-/* XS - Extra Small Devices */ 
+/* XS - Extra Small Devices */
 @media only screen and (min-width : 320px) and (max-width: 575px) {
   @import "breakpoints/_1_xs";
 }
 
-/* SM - Small Devices */ 
+/* SM - Small Devices */
 @media only screen and (min-width : 576px) and (max-width: 767px) {
   @import "breakpoints/_2_sm";
 }
