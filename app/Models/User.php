@@ -7,7 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model
 {
 
-    protected $fillable = ['email', 'name', 'photo', 'role_id', 'curriculum_id'];
+    /**
+     * Mass assignment allowed fields
+     */
+    protected $fillable = [
+        'email',
+        'name',
+        'photo',
+        'role_id',
+        'curriculum_id'
+    ];
 
     /**
      * Get the curriculum record associated with the user.
@@ -32,4 +41,23 @@ class User extends Model
     {
         return $this->hasOne(\App\Models\Social::class);
     }
+
+    /**
+     * Definindo um acessor para o nome formatado
+     */
+    public function getNomeFormatadoAttribute()
+    {
+        return ucwords($this->name);
+    }
+
+    /**
+     * Definindo um acessor para a URL da foto do User
+     */
+    public function getFotoURLAttribute()
+    {
+        $url = $this->photo ? $this->photo : url('img/jpg/dummy-membro.jpg');
+
+        return $url;
+    }
+
 }

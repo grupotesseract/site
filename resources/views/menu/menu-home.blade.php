@@ -2,7 +2,7 @@
   
   <a class="navbar-logo text-center" href="{{ url('/') }}">
       <img class="img-fluid" src="{{ asset('img/svg/logo-tesseract-branco-simples.svg') }}" title="" alt="Tesseract Logo"/>
-      <h1>Tesseract</h1>
+      <h1 id="logo-titulo">Tesseract</h1>
   </a>
   
   <ul class="nav navbar-nav pull-right hidden-xs-up">

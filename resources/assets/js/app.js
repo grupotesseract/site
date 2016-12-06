@@ -8,7 +8,7 @@ window.select2 = require('select2');
 window.sr = require('scrollreveal');
 window.smoothScroll = require('smooth-scroll');
 window.masonry = require('masonry-layout');
-require('./vendor/wordrotate');
+//require('./vendor/wordrotate');
 
 $('#menu li').each(function () {
     if ($(this).children('a').attr('href') == window.location.href) {
@@ -19,17 +19,33 @@ $('#menu li').each(function () {
 
 $('.add-select2').select2();
 
-function revealMenuOnScroll() {                            
-	$(window).scroll(function(){                          
-	    if($(this).scrollTop() > 200) {
-	        $('#menu-principal').fadeIn(500);
-	    } else {
-	        $('#menu-principal').fadeOut(500);
-	    }
+function revealMenuOnScroll() {
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 30){
+			$("#menu-principal").addClass("navbar-fixed-top");
+			$("#menu-principal ul").removeClass("hidden-xs-up");
+			$("#menu-principal").css("height", (10+"vh"));
+			$("#menu-principal").css("background-color", "transparent");
+
+			$(".navbar-logo img").css("height", (100 - $(window).scrollTop()) + "vh");
+    		$(".navbar-logo h1").css("opacity", 1 - $(window).scrollTop() / 250);
+    		$(".navbar-logo").switchClass(".navbar-logo", ".navbar-brand");
+		}
+		else if($(window).scrollTop() == 0){
+			$("#menu-principal").removeClass("navbar-fixed-top");
+			$("#menu-principal ul").addClass("hidden-xs-up");
+			$("#menu-principal").css("height", (100+"vh"));
+			$("#menu-principal").css("background-color", "black");
+
+			$(".navbar-brand img").css("height", (50+"vh"));
+			$(".navbar-brand h1").css("opacity", 1);
+			$(".navbar-brand").switchClass(".navbar-brand", ".navbar-logo");
+		}
+		
 	});
 }
 
 $(document).ready(function() {
-	revealMenuOnScroll();
+	window.onload = revealMenuOnScroll();
 	smoothScroll.init();
 });

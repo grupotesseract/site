@@ -12,23 +12,7 @@
 
         {{-- Seção INTRO --}}
         <div class="row">
-          <header class="container header-tesseract">
-              <div class="cd-intro">
-                  <h1 class="cd-headline letters type">
-                      <span>Nós criamos</span>
-                      <span class="cd-words-wrapper waiting">
-                          <b class="is-visible">sites</b>
-                          <b>sistemas</b>
-                          <b>aplicativos</b>
-                          <b>conexões</b>
-                          <b>inteligência</b>
-                          <b>segurança</b>
-                          <b>inovação</b>
-                          <b>tecnologia</b>
-                      </span>
-                  </h1>
-              </div>
-          </header>
+          @include('home.intro.index')
         </div>
         {{-- Fim da Seção INTRO --}}
 
@@ -37,22 +21,22 @@
             @include('home.institutional.index')
         </div>
 
-        <div class="row">
         {{-- Seção PORTFOLIO --}}
             @include('home.portfolio.index')
-        </div>
 
-        <div class="row">
         {{-- Seção EQUIPE --}}
             @include('home.team.index')
-        </div>
 
-        <div class="row">
         {{-- Seção CONTATO --}}
             @include('home.contact.index')
         </div>
 
-
-        <div class="separador-footer"></div>
-
 @endsection
+
+
+<div class="separador-footer"></div>
+{{-- Incluindo FOOTER --}}
+@section('footer')
+    @include('footer')
+@endsection
+

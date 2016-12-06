@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="@yield('html-classes')">
   <head>
 
       {{-- Título da Plataforma --}}
@@ -83,8 +83,8 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
   </head>
-  <body>
+  <body class="@yield('body-classes')">
   @yield('page-content')
 
-  {{-- Incluindo FOOTER --}}
-  @include('footer')
+  @yield('footer')
+

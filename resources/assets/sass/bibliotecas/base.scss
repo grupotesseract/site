@@ -15,9 +15,16 @@ body {
 #apresentacao{
   #menu-principal{
     display: block;
+    position: fixed;
     background-color: $cor-preto;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    @include transition (height 2s);
+    @include transition (background-color 2s);
     .navbar-logo{
       text-decoration: none;
       img{
@@ -26,12 +33,14 @@ body {
         position: relative;
         top: 20%;
         margin: 0 auto;
+        @include transition (height 2s);
       }
       h1{
         position: relative;
         top: 20%;
         color: $cor-branco;
         font-size: 5rem;
+        @include transition (opacity 2s);
       }
     }
     ul li a{
@@ -42,15 +51,55 @@ body {
   }
 }
 
-.header-tesseract {
-  background-image: url("/img/jpg/background/bg05.jpg");
+#intro {
+  $bgimg: random(5);
+  background-image: url("/img/jpg/background/bg0#{$bgimg}.jpg");
   font-family: $font-family-jaapokki-regular;
   background-position: center center;
   padding-top: 10em;
   position: relative;
-  width: 100%;
-  height: 50vh;
+  width: 100vw;
+  height: 100vh;
   float: left;
+}
+#equipe {
+  background-color: #fffcf5;
+  color: #1d1d1d;
+}
+#contato {
+  color: #fffcf5;
+  input,
+  textarea {
+    border-radius: 0px;
+  }
+  label {
+    font-size: 2em;
+    margin-bottom: 0px;
+  }
+  input[type="submit"] {
+    background-color:transparent;
+    border: none;
+    color: #fffcf5;
+    float:right;
+    font-size: 2em;
+    cursor: pointer;
+  }
+}
+.contato-container {
+  position: relative;
+  padding-top: 1em;
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    background-color: #eee;
+    background-image: url('/img/png/bgcells.png');
+    background-repeat: repeat;
+    background-size: auto 100%;
+    height:20px;
+  }
 }
 
 #footer{

@@ -9,7 +9,16 @@ use App\Repositories\UserRepository as User;
 
 class UsersController extends Controller
 {
+    /**
+     * Instancia do repositorio de Users contendo a logica operacional
+     */
     protected $users;
+
+    /**
+     * Construtor rebendo instancia de UseRespository por injeção de dependencia
+     *
+     * @param App\Repositories\UserRepository - Instancia do repositorio de users
+     */
     public function __construct(User $users)
     {
         $this->users = $users;
@@ -17,7 +26,7 @@ class UsersController extends Controller
 
     public function index()
     {
-        $users = $this->users->getAllPaginated(10);
+        $users = $this->users->getAllPaginated(15);
 
         return view('users.index', compact('users'));
     }

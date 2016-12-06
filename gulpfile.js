@@ -32,6 +32,7 @@ elixir(function(mix) {
         '/../../../node_modules/scrollreveal/dist/scrollreveal.min.js',
         '/../../../node_modules/smooth-scroll/dist/js/smooth-scroll.min.js',
         '/../../../node_modules/masonry-layout/dist/masonry.pkgd.min.js',
+        '/../../../node_modules/pace/pace.js',
         'vendor/wordrotate.js'
     ], 'public/js/tesseract.js');
 
