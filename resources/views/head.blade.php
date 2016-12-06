@@ -49,7 +49,7 @@
 
       {{-- Facebook Pixel AD - pra referência acesse: https://www.facebook.com/ads/manager/pixel/ --}}
       @if(env('APP_ENV') === 'production')
-      
+
       @endif
 
       {{-- Facebook OpenGraph metatags --}}
@@ -87,4 +87,3 @@
   @yield('page-content')
 
   @yield('footer')
-

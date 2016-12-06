@@ -25,6 +25,9 @@ elixir(function(mix) {
     ], 'public/css/app.css');
 
     mix.scripts([
+      /*
+        Já tão sendo incluídos via require/browserify
+
         '/../../../node_modules/jquery/dist/jquery.min.js',
         '/../../../node_modules/tether/dist/js/tether.min.js',
         '/../../../node_modules/tether-tooltip/dist/js/tooltip.min.js',
@@ -35,6 +38,7 @@ elixir(function(mix) {
         '/../../../node_modules/masonry-layout/dist/masonry.pkgd.min.js',
         '/../../../node_modules/pace/pace.js',
         '/../../../node_modules/sweetalert2/dist/sweetalert2.min.js',
+      */
         'vendor/wordrotate.js'
     ], 'public/js/tesseract.js');
 

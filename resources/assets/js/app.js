@@ -31,10 +31,6 @@ window.pace = require('pace');
 // SweetAlert 2 [https://github.com/limonte/sweetalert2]
 window.swal = require('sweetalert2');
 
-// WordRotate
-require('./vendor/wordrotate');
-
-
 
 $('#menu li').each(function () {
     if ($(this).children('a').attr('href') == window.location.href) {
@@ -75,9 +71,11 @@ $(document).ready(function() {
 	window.onload = revealMenuOnScroll();
 	smoothScroll.init();
 
+/* quebrado por enquanto
   $('.grid').masonry({
     // options
     itemSelector: '.grid-item',
     columnWidth: 100
   });
+	*/
 });
