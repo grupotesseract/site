@@ -1,6 +1,6 @@
 {{-- Seção INTRO --}}
-<section id="intro" class="container">
-    <div class="cd-intro">
+<section id="intro" class="container-fluid">
+    <div class="row cd-intro">
         <h1 class="cd-headline letters type">
             <span>Nós criamos</span>
             <span class="cd-words-wrapper waiting">

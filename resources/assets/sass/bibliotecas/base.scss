@@ -52,16 +52,41 @@ body {
 }
 
 #intro {
-  $bgimg: random(5);
-  background-image: url("/img/jpg/background/bg0#{$bgimg}.jpg");
-  font-family: $font-family-jaapokki-regular;
-  background-position: center center;
-  padding-top: 10em;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  float: left;
+  .cd-intro{
+    &:before{
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      opacity: .20;
+      background:
+        radial-gradient(circle farthest-side at 0% 50%,#7F7F7F 23.5%,rgba(0,0,0,0.2) 0)21px 30px,
+        radial-gradient(circle farthest-side at 0% 50%,#252525 24%,rgba(25,25,25,0) 0)19px 30px,
+        linear-gradient(#7F7F7F 14%,rgba(25,25,25,0) 0, rgba(25,25,25,0) 85%,#7F7F7F 0)0 0,
+        linear-gradient(150deg,#7F7F7F 24%,#252525 0,#252525 26%,rgba(25,25,25,0) 0,rgba(25,25,25,0) 74%,#252525 0,#252525 76%,#7F7F7F 0)0 0,
+        linear-gradient(30deg,#7F7F7F 24%,#252525 0,#252525 26%,rgba(25,25,25,0) 0,rgba(25,25,25,0) 74%,#252525 0,#252525 76%,#7F7F7F 0)0 0,
+        linear-gradient(90deg,#252525 2%,#7F7F7F 0,#7F7F7F 98%,#252525 0%)0 0 #7F7F7F;
+        background-size: 40px 60px;
+      }
+      $bgimg: random(5);
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      background-image: url("/img/jpg/background/bg0#{$bgimg}.jpg");
+      background-position: center center;
+      .cd-headline{
+        position: relative;
+        top: 35%;
+        text-shadow: -1px 3px 3px rgba(150, 150, 150, 0.75);
+        z-index: 3;
+      }
+  }
 }
+
 #equipe {
   background-color: #fffcf5;
   color: #1d1d1d;
@@ -77,6 +102,7 @@ body {
   .grid-item { width: 100px; }
   .grid-item-2 { width: 200px; }
 }
+
 #contato {
   color: #fffcf5;
   input,

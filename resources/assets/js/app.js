@@ -21,7 +21,7 @@ $('.add-select2').select2();
 
 function revealMenuOnScroll() {
 	$(window).scroll(function(){
-		if($(window).scrollTop() > 30){
+		if($(window).scrollTop() > 1){
 			$("#menu-principal").addClass("navbar-fixed-top");
 			$("#menu-principal ul").removeClass("hidden-xs-up");
 			$("#menu-principal").css("height", (10+"vh"));
