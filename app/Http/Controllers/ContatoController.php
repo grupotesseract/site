@@ -25,7 +25,8 @@ class ContatoController extends Controller
     public function postContato(ContatoRequest $request)
     {
         $enviouEmail = $this->repositorioEmails->enviaEmailContato($request);
-        dd($enviouEmail);
+        $request->session()->flash('alert-success', 'Muito obrigado, assim que possível entraremos em contato.');
+        return redirect('/');
     }
 
 
