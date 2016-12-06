@@ -21,7 +21,8 @@ elixir(function(mix) {
         '/../../../node_modules/font-awesome/css/font-awesome.css',
         '/../../../node_modules/animate.css/animate.css',
         '/../../../node_modules/select2/dist/css/select2.css',
-      ], 'public/css/app.css');
+        '/../../../node_modules/sweetalert2/dist/sweetalert2.min.css',
+    ], 'public/css/app.css');
 
     mix.scripts([
         '/../../../node_modules/jquery/dist/jquery.min.js',
@@ -33,6 +34,7 @@ elixir(function(mix) {
         '/../../../node_modules/smooth-scroll/dist/js/smooth-scroll.min.js',
         '/../../../node_modules/masonry-layout/dist/masonry.pkgd.min.js',
         '/../../../node_modules/pace/pace.js',
+        '/../../../node_modules/sweetalert2/dist/sweetalert2.min.js',
         'vendor/wordrotate.js'
     ], 'public/js/tesseract.js');
 

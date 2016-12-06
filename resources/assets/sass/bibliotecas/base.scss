@@ -88,6 +88,8 @@ body {
 }
 
 #equipe {
+  width: 100vw;
+  height: 100vh;
   background-color: #fffcf5;
   color: #1d1d1d;
   img {
@@ -107,11 +109,11 @@ body {
   color: #fffcf5;
   input,
   textarea {
-    border-radius: 0px;
+    border-radius: 0;
   }
   label {
-    font-size: 2em;
-    margin-bottom: 0px;
+    font-size: 1.7em;
+    margin-bottom: 0;
   }
   input[type="submit"] {
     background-color:transparent;
