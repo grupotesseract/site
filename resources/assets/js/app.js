@@ -48,4 +48,11 @@ function revealMenuOnScroll() {
 $(document).ready(function() {
 	window.onload = revealMenuOnScroll();
 	smoothScroll.init();
+
+
+  $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 100
+  });
 });

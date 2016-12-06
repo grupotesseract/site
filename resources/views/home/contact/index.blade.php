@@ -1,6 +1,6 @@
 {{-- Seção CONTATO --}}
 <div class="row contato-container">
-  <section id="contato" class="container padding-t-4">
+  <section id="contato" class="container padding-t-4 padding-b-4">
       <div class="row">
           <div class="col-lg-12 text-xs-center text-md-left">
               <h2 class="titulo-secao-branco">
