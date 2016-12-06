@@ -23,7 +23,8 @@ window.select2 = require('select2');
 window.sr = require('scrollreveal');
 
 // Masonry [https://github.com/desandro/masonry]
-window.masonry = require('masonry-layout');
+// require('masonry-layout');
+
 
 // Pace [https://github.com/HubSpot/pace]
 window.pace = require('pace');
@@ -51,7 +52,7 @@ function revealMenuOnScroll() {
 
 			$(".navbar-logo img").css("height", (100 - $(window).scrollTop()) + "vh");
     		$(".navbar-logo h1").css("opacity", 1 - $(window).scrollTop() / 250);
-    		$(".navbar-logo").switchClass(".navbar-logo", ".navbar-brand");
+    		$(".navbar-logo").toggleClass(".navbar-logo .navbar-brand");
 		}
 		else if($(window).scrollTop() == 0){
 			$("#menu-principal").removeClass("navbar-fixed-top");
@@ -61,7 +62,7 @@ function revealMenuOnScroll() {
 
 			$(".navbar-brand img").css("height", (50+"vh"));
 			$(".navbar-brand h1").css("opacity", 1);
-			$(".navbar-brand").switchClass(".navbar-brand", ".navbar-logo");
+			$(".navbar-brand").toggleClass(".navbar-brand .navbar-logo");
 		}
 
 	});
@@ -71,11 +72,10 @@ $(document).ready(function() {
 	window.onload = revealMenuOnScroll();
 	smoothScroll.init();
 
-/* quebrado por enquanto
   $('.grid').masonry({
     // options
     itemSelector: '.grid-item',
-    columnWidth: 100
+    columnWidth: 150
   });
-	*/
+
 });
