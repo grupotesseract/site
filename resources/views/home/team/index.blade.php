@@ -12,7 +12,7 @@
             <ul class="img-list grid">
               {{-- SEÇÃO EQUIPE --}
               @foreach ($Users as $Membro)
-}
+              }
               <?php
                 //randomiza tamanho dos users
                   $rand = rand(0,10);
@@ -47,7 +47,6 @@
                    </span>
                   </li>
               @endforeach
-
             </ul>
           </div>
         </div>

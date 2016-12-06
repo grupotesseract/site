@@ -79,6 +79,10 @@ body {
       z-index: 0;
       background-image: url("/img/jpg/background/bg0#{$bgimg}.jpg");
       background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
       .cd-headline{
         position: relative;
         top: 35%;
@@ -90,6 +94,7 @@ body {
 
 #equipe {
   width: 100vw;
+  height: 100vh;
   background-color: #fffcf5;
   color: #1d1d1d;
   img {
