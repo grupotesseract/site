@@ -40,6 +40,7 @@ body {
         top: 20%;
         color: $cor-branco;
         font-size: 5rem;
+        text-align: center;
         @include transition (opacity 2s);
       }
     }
