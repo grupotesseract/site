@@ -22,16 +22,14 @@ window.select2 = require('select2');
 // ScrollReveal [https://github.com/jlmakes/scrollreveal]
 window.sr = require('scrollreveal');
 
-// Masonry [https://github.com/desandro/masonry]
-// require('masonry-layout');
-
-
 // Pace [https://github.com/HubSpot/pace]
 window.pace = require('pace');
 
 // SweetAlert 2 [https://github.com/limonte/sweetalert2]
 window.swal = require('sweetalert2');
 
+// Masonry [https://github.com/desandro/masonry]
+// require('masonry-layout');
 
 $('#menu li').each(function () {
     if ($(this).children('a').attr('href') == window.location.href) {
