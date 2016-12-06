@@ -1,13 +1,11 @@
 {{-- Seção EQUIPE --}}
-<section id="equipe" class="row padding-4">
-  <div class="container-fluid">
+<section id="equipe" class="container-fluid">
     <div class="row">
       <div class="col-lg-12 text-xs-center">
         <h2 class="titulo-secao-preto">
           {{ trans('global.title_equipe') }}
         </h2>
       </div>
-    </div>
       <div class="row">
         <div class="container">
           <div class="col-xs-12">

@@ -24,10 +24,10 @@ elixir(function(mix) {
         '/../../../node_modules/sweetalert2/dist/sweetalert2.min.css',
     ], 'public/css/app.css');
 
-    mix.scripts([
-      /*
-        Já tão sendo incluídos via require/browserify
+    mix.browserify('app.js');
 
+    mix.scripts([
+    /*  já chamados pelo browserify
         '/../../../node_modules/jquery/dist/jquery.min.js',
         '/../../../node_modules/tether/dist/js/tether.min.js',
         '/../../../node_modules/tether-tooltip/dist/js/tooltip.min.js',
@@ -45,8 +45,6 @@ elixir(function(mix) {
     mix.sass([
     	'tesseract.scss'
     ], 'public/css/tesseract.css');
-
-    mix.browserify('app.js');
 
     mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
 });
