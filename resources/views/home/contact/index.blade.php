@@ -10,14 +10,18 @@
       </div>
       <div class="row">
           <div class="col-lg-12">
-              {!! Form::open(['url' => 'foo/bar']) !!}
+              {!! Form::open(['url' => 'contato']) !!}
                   <form name="sentMessage" id="contactForm" novalidate>
                       <div class="row">
                           <div class="col-md-12">
+                              @if ( count($errors) > 0 )
+                                  @foreach ($errors->all() as $error)
+                                    <p class="help-block text-danger">{{ $error }}</p>
+                                  @endforeach
+                              @endif
                               <div class="form-group">
                                 {{ Form::label('nome', trans("global.label_nome"), ['class' => 'label-form']) }}
                                 {{ Form::text('nome', '', ['class' => 'form-control', 'placeholder' => 'Daneel Olivaw', 'required']) }}
-                                <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
                                 {{ Form::label('email', trans("global.label_email"), ['class' => 'label-form']) }}
