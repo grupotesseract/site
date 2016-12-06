@@ -1,6 +1,6 @@
 {{-- Seção EQUIPE --}}
 <section id="equipe" class="row padding-4">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12 text-xs-center">
         <h2 class="titulo-secao-preto">
@@ -34,8 +34,6 @@
                           @if ($Membro->social->googleplus)
                               <a href="{{ $Membro->social->googleplus }}"><i class="fa fa-googleplus"></i></a>
                           @endif
-
-
                       </ul>
                    </span>
                   </li>

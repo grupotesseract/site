@@ -3,49 +3,42 @@
 @section('page-title', trans('global.page-title_home'))
 
 @section('page-content')
-
-        {{-- Seção MENU --}}
-            @include('menu.menu-home')
-
         {{-- Seção CABEÇALHO --}}
-        <div class="row">
-          <header class="container header-tesseract">
-              <div class="cd-intro">
-                  <h1 class="cd-headline letters type">
-                      <span>Nós criamos</span>
-                      <span class="cd-words-wrapper waiting">
-                          <b class="is-visible">sites</b>
-                          <b>sistemas</b>
-                          <b>aplicativos</b>
-                          <b>conexões</b>
-                          <b>inteligência</b>
-                          <b>segurança</b>
-                          <b>inovação</b>
-                          <b>tecnologia</b>
-                      </span>
-                  </h1>
-              </div>
-          </header>
-        </div>
+          <div class="row">
+            @include('home.presentation.index')
+          </div>
         {{-- Fim da Seção CABEÇALHO --}}
 
+        {{-- Seção INTRO --}}
+          <div class="row">
+            @include('home.intro.index')
+          </div>
+        {{-- Fim da Seção INTRO --}}
+
         {{-- Seção INSTITUCIONAL --}}
-        <div class="row">
-            @include('home.institutional.index')
-        </div>
+          <div class="row">
+              @include('home.institutional.index')
+          </div>
+        {{-- Fim da Seção INSTITUCIONAL --}}
 
         {{-- Seção PORTFOLIO --}}
-            @include('home.portfolio.index')
+          <div class="row">
+              @include('home.portfolio.index')
+          </div>
+        {{-- Fim da Seção PORTFOLIO --}}
 
         {{-- Seção EQUIPE --}}
-            @include('home.team.index')
+          <div class="row"> 
+              @include('home.team.index')
+          </div>
+        {{-- Fim da Seção EQUIPE --}}
 
         {{-- Seção CONTATO --}}
-            @include('home.contact.index')
-        </div>
-
+          <div class="row">
+              @include('home.contact.index')
+          </div>
+        {{-- Fim da Seção CONTATO --}}
 @endsection
-
 
 <div class="separador-footer"></div>
 {{-- Incluindo FOOTER --}}

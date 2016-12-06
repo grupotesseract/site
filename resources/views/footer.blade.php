@@ -12,17 +12,17 @@
 		                <ul class="inline-social-media">
 		                	<li class="inline-block-social-media">
 		                		<a class="pl-1 pr-1" href="{{ env('SOCIAL_MEDIA_GITHUB') }}" target="_blank">
-		                			<i class="fa fa-github"></i>
+		                			<i class="fa fa-1-5x fa-github"></i>
 		                		</a>
 		                    </li>
 		                    <li class="inline-block-social-media">
 		                    	<a class="pl-1 pr-1" href="{{ env('SOCIAL_MEDIA_FACEBOOK') }}" target="_blank">
-		                    		<i class="fa fa-facebook"></i>
+		                    		<i class="fa fa-1-5x fa-facebook"></i>
 		                    	</a>
 		                    </li>
 		                    <li class="inline-block-social-media">
 		                    	<a class="pl-1 pr-1" href="{{ env('SOCIAL_MEDIA_LINKEDIN') }}" target="_blank">
-		                    		<i class="fa fa-linkedin"></i>
+		                    		<i class="fa fa-1-5x fa-linkedin"></i>
 		                    	</a>
 		                    </li>
 		                </ul>

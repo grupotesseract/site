@@ -2,7 +2,7 @@
 <div class="row contato-container">
   <section id="contato" class="container padding-t-4 padding-b-4">
       <div class="row">
-          <div class="col-lg-12 text-xs-center text-md-left">
+          <div class="col-lg-12 text-xs-center">
               <h2 class="titulo-secao-branco">
                   {{ trans('global.title_contato') }}
               </h2>
@@ -29,7 +29,7 @@
                             </div>
                             <div class="form-group">
                                 {{ Form::label('mensagem', trans("global.label_mensagem"), ['class' => 'label-form']) }}
-                                {{ Form::textarea('mensagem', '', ['class' => 'form-control', 'placeholder' => 'Hey galera! Me expliquem como funciona o trabalho de vocês!', 'required']) }}
+                                {{ Form::textarea('mensagem', '', ['class' => 'form-control', 'placeholder' => 'Hey galera! Me expliquem como funciona o trabalho de vocês!', 'required', 'rows' => '4']) }}
                             </div>
                           </div>
                           <div class="clearfix"></div>
