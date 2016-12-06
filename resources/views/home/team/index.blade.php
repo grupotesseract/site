@@ -12,14 +12,15 @@
             <ul class="img-list grid">
               {{-- SEÇÃO EQUIPE --}
               @foreach ($Users as $Membro)
-}
               <?php
                 //randomiza tamanho dos users
                   $rand = rand(0,10);
-                  if($rand < 9) {
-                    $cssSize = 'grid-item';
-                  } else {
+                  $cssSize = 'grid-item';
+                  if($rand > 8) {
                     $cssSize = 'grid-item grid-item-2';
+                  }
+                  if ($rand > 9) {
+                    $cssSize = 'grid-item grid-item-3';
                   }
 
                ?>

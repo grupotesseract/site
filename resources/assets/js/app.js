@@ -75,7 +75,7 @@ $(document).ready(function() {
   $('.grid').masonry({
     // options
     itemSelector: '.grid-item',
-    columnWidth: 150
+    columnWidth: 80
   });
 
 });
