@@ -9,7 +9,7 @@ window.sr = require('scrollreveal');
 window.smoothScroll = require('smooth-scroll');
 window.masonry = require('masonry-layout');
 require('./vendor/wordrotate');
-
+/*
 $('#menu li').each(function () {
     if ($(this).children('a').attr('href') == window.location.href) {
         $(this).addClass('active');
@@ -18,9 +18,9 @@ $('#menu li').each(function () {
 });
 
 $('.add-select2').select2();
-
+*/
 $(document).ready(function() {
-	smoothScroll.init();
+	//smoothScroll.init();
 
 
   $('.grid').masonry({
