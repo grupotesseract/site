@@ -10,11 +10,22 @@
     </div>
       <div class="row">
         <div class="container">
-          <div class="col-md-8 col-md-offset-2">
+          <div class="col-xs-12">
             <ul class="img-list grid">
-              {{-- SEÇÃO EQUIPE --}}
+              {{-- SEÇÃO EQUIPE --}
               @foreach ($Users as $Membro)
-                <li class="thumbnail-grande grid-item">
+}
+              <?php
+                //randomiza tamanho dos users
+                  $rand = rand(0,10);
+                  if($rand < 9) {
+                    $cssSize = 'grid-item';
+                  } else {
+                    $cssSize = 'grid-item grid-item-2';
+                  }
+
+               ?>
+               <li class="thumbnail-grande <?php echo $cssSize; ?>">
                   <img src="{{ $Membro->fotoURL }}" class="equipe-img-grande" />
                    <span class="conteudo-texto-grande">
                      <span>

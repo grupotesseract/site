@@ -90,7 +90,6 @@ body {
 
 #equipe {
   width: 100vw;
-  height: 100vh;
   background-color: #fffcf5;
   color: #1d1d1d;
   img {
@@ -102,8 +101,8 @@ body {
     left: 0px;
   }
   ul { list-style: none; }
-  .grid-item { width: 100px; }
-  .grid-item-2 { width: 200px; }
+  .grid-item { width: 150px; }
+  .grid-item-2 { width: 300px; }
 }
 
 #contato {

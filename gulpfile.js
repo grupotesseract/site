@@ -35,10 +35,10 @@ elixir(function(mix) {
         '/../../../node_modules/bootstrap/dist/js/bootstrap.min.js',
         '/../../../node_modules/scrollreveal/dist/scrollreveal.min.js',
         '/../../../node_modules/smooth-scroll/dist/js/smooth-scroll.min.js',
-        '/../../../node_modules/masonry-layout/dist/masonry.pkgd.min.js',
         '/../../../node_modules/pace/pace.js',
         '/../../../node_modules/sweetalert2/dist/sweetalert2.min.js',
       */
+        '/../../../node_modules/masonry-layout/dist/masonry.pkgd.min.js',
         'vendor/wordrotate.js'
     ], 'public/js/tesseract.js');
 
