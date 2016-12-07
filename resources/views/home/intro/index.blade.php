@@ -1,7 +1,7 @@
 {{-- Seção INTRO --}}
 <section id="intro" class="container-fluid">
     <div class="row cd-intro">
-        <h1 class="cd-headline letters clip">
+        <h1 class="cd-headline letters rotate-2">
             <span>Nós criamos</span>
             <span class="cd-words-wrapper waiting">
                 <b class="is-visible">sites</b>

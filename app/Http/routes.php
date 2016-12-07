@@ -20,3 +20,5 @@ Route::group(['prefix' => 'team-tesseract'], function () {
     Route::resource('roles', 'Users\RolesController', ['only' => ['index', 'store']]);
     Route::resource('skills', 'Users\SkillsController', ['only' => ['index', 'store']]);
 });
+
+Route::post('contato', 'ContatoController@postContato');
