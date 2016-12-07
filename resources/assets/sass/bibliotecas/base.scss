@@ -10,45 +10,48 @@ body {
   font-family: $font-family-jaapokki-regular;
   color: white;
   background-color: #1D1D1D;
+  overflow-x: hidden;
 }
 
-#apresentacao{
-  #menu-principal{
-    display: block;
-    position: fixed;
-    background-color: $cor-preto;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    @include transition (height 2s);
-    @include transition (background-color 2s);
-    .navbar-logo{
-      text-decoration: none;
-      img{
-        height: 50vh;
-        width: 100%;
-        position: relative;
-        top: 20%;
-        margin: 0 auto;
-        @include transition (height 2s);
-      }
-      h1{
-        position: relative;
-        top: 20%;
-        color: $cor-branco;
-        font-size: 5rem;
-        text-align: center;
-        @include transition (opacity 2s);
-      }
+#menu-principal{
+  display: block;
+  position: fixed;
+  background-color: $cor-preto;
+  // height: 100vh;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 60px;
+  @include transition (height 2s);
+  @include transition (background-color 2s);
+  .navbar-logo{
+    text-decoration: none;
+
+    img{
+      //    height: 50vh;
+      height: 45px;
+      width: auto;
+      position: relative;
+      //top: 20%;
+      @include transition (height 2s);
     }
-    ul li a{
-      text-transform: lowercase;
-      text-decoration: none;
+    h1{
+      display:none;
+      position: relative;
+      top: 20%;
       color: $cor-branco;
+      font-size: 5rem;
+      text-align: center;
+      @include transition (opacity 2s);
     }
+
+  }
+  ul li a{
+    text-transform: lowercase;
+    text-decoration: none;
+    color: $cor-branco;
   }
 }
 
@@ -91,11 +94,56 @@ body {
       }
   }
 }
+#portfolio {
+  h2 {
+    font-size: 2em;
+  }
+  .parallax {
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    a {
+      color: white;
+    }
+  }
+  .parallax {
+    background-size: cover;
+    background-position: center center;
+  }
+  .parallax-broove {
+    background-image: url('/img/jpg/portfolio/broove.jpg');
+  }
+  .parallax-yeswequero {
+    background-image: url('/img/jpg/portfolio/yeswequero.jpg');
+  }
+  .parallax-groch {
+    background-image: url('/img/jpg/portfolio/grochfilmes.jpg');
+  }
+  .parallax-vivala {
+    background-image: url('/img/jpg/portfolio/vivala.jpg');
+  }
+}
+#institucional {
+  background-color: #fffcf5;
+  color: #1d1d1d;
+  text-align: center;
+  .alinha-assinatura {
+    display: inline-block;
+    float: right;
+    text-align: left;
+  }
+}
 
 #equipe {
   width: 100vw;
   background-color: #fffcf5;
   color: #1d1d1d;
+  padding-bottom: 2em;
+  h2 {
+    padding-top: 0.7em;
+    padding-bottom: 1em;
+    font-size: 4em;
+  }
   img {
     width:100%;
   }
@@ -135,8 +183,16 @@ body {
       }
     }
   }
-  .grid-item { width: 145px; margin-bottom: 26px; }
-  .grid-item-2 { width: 316px; }
+  .grid-item {
+    width: 145px;
+    margin-bottom: 26px;
+    img { width:145px; height:145px;}
+  }
+  .grid-item-2 {
+    width: 316px;
+    font-size: 1.5em;
+    img { width:316px; height:316px;}
+   }
   .grid-item-3 { width: 420px; }
 }
 

@@ -41,6 +41,7 @@ $('#menu li').each(function () {
 $('.add-select2').select2();
 
 function revealMenuOnScroll() {
+  /*
 	$(window).scroll(function(){
 		if($(window).scrollTop() > 1){
 			$("#menu-principal").addClass("navbar-fixed-top");
@@ -63,7 +64,7 @@ function revealMenuOnScroll() {
 			$(".navbar-brand").toggleClass(".navbar-brand .navbar-logo");
 		}
 
-	});
+	});*/
 }
 
 $(document).ready(function() {

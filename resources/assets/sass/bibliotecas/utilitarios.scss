@@ -1,4 +1,4 @@
-/* 
+/*
 * 	VARIABLES
 */
  $fa-un:1em;
@@ -6,7 +6,7 @@
  $margin-un:1em;
  $border-un:1em;
 
-/* 
+/*
 * 	Texts in general
 */
 .texto-minusculo{
@@ -22,7 +22,7 @@
 	text-decoration: none;
 }
 
-/* 
+/*
 *  FontAwesome - More icon sizes
 */
 .fa-0-1x {
@@ -98,9 +98,16 @@
 .padding-b-4 {
 	padding-bottom: 4em;
 }
+.padding-t-1{
+	padding-top: 1em;
+}
 .padding-t-4 {
 	padding-top: 4em;
 }
 .padding-4 {
 	padding: 4em;
+}
+
+.font-jaapokki-subtract {
+  font-family: $font-family-jaapokki-subtract;
 }
