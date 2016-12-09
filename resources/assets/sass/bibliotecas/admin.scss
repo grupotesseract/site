@@ -1,6 +1,10 @@
 /*==============================================================================
   SASS DA PARTE ADMINISTRATIVA
 ==============================================================================*/
+@import "mixins/_mixins";
+@import "bibliotecas/cores";
+@import "bibliotecas/fontes";
+@import "bibliotecas/utilitarios";
 
 body.admin, html.admin {
     min-height: 100%;

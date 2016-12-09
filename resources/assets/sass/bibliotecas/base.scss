@@ -2,6 +2,10 @@
 /*==============================================================================
   Definições básicas do site: fontes, cores de link, etc
 ==============================================================================*/
+@import "mixins/_mixins";
+@import "bibliotecas/cores";
+@import "bibliotecas/fontes";
+@import "bibliotecas/utilitarios";
 
 body {
   margin: -1;
@@ -16,26 +20,23 @@ body {
 #menu-principal{
   display: block;
   position: fixed;
-  background-color: $cor-preto;
   // height: 100vh;
+  @include transition (all 1s ease-in);
   overflow: hidden;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
   height: 60px;
-  @include transition (height 2s);
-  @include transition (background-color 2s);
   .navbar-logo{
     text-decoration: none;
-
     img{
-      //    height: 50vh;
+      // height: 50vh;
       height: 45px;
+      @include transition (height 2s);
       width: auto;
       position: relative;
-      //top: 20%;
-      @include transition (height 2s);
+      //top: 20%;#
     }
     h1{
       display:none;
@@ -54,8 +55,8 @@ body {
     color: $cor-branco;
   }
 }
-
 #intro {
+  padding: 0;
   .cd-intro{
     &:before{
       content: ' ';
@@ -86,6 +87,7 @@ body {
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+      margin: 0em 0em;
       .cd-headline{
         position: relative;
         top: 35%;
@@ -94,8 +96,33 @@ body {
       }
   }
 }
+#institucional {
+  padding: 2rem 0;
+  color: #1d1d1d;
+  background-color: #fffcf5;
+  .institucional-titulo{
+    @extend .texto-maiusculo;
+    @extend .font-jaapokki-enhance;
+  }
+  .institucional-subtitulo{
+    @extend .texto-maiusculo;
+    @extend .font-jaapokki-subtract;
+    small{
+      position: relative;
+      right: 33.5%;
+    }
+  }
+  .alinha-assinatura {
+    display: inline-block;
+    float: right;
+    text-align: left;
+  }
+}
 #portfolio {
-  h2 {
+  background-color: $cor-branco;
+  .titulo-trabalho {
+    position: relative;
+    z-index: 1;
     font-size: 2em;
   }
   .parallax {
@@ -106,44 +133,12 @@ body {
       color: white;
     }
   }
-  .parallax {
-    background-size: cover;
-    background-position: center center;
-  }
-  .parallax-broove {
-    background-image: url('/img/jpg/portfolio/broove.jpg');
-  }
-  .parallax-yeswequero {
-    background-image: url('/img/jpg/portfolio/yeswequero.jpg');
-  }
-  .parallax-groch {
-    background-image: url('/img/jpg/portfolio/grochfilmes.jpg');
-  }
-  .parallax-vivala {
-    background-image: url('/img/jpg/portfolio/vivala.jpg');
-  }
 }
-#institucional {
-  background-color: #fffcf5;
-  color: #1d1d1d;
-  text-align: center;
-  .alinha-assinatura {
-    display: inline-block;
-    float: right;
-    text-align: left;
-  }
-}
-
 #equipe {
+  padding: 2rem 0;
   width: 100vw;
-  background-color: #fffcf5;
   color: #1d1d1d;
-  padding-bottom: 2em;
-  h2 {
-    padding-top: 0.7em;
-    padding-bottom: 1em;
-    font-size: 4em;
-  }
+  background-color: #fffcf5;
   img {
     width:100%;
   }
@@ -195,8 +190,21 @@ body {
    }
   .grid-item-3 { width: 420px; }
 }
-
 #contato {
+  position: relative;
+  padding-top: 1em;
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    background-color: #eee;
+    background-image: url('/img/png/bgcells.png');
+    background-repeat: repeat;
+    background-size: auto 100%;
+    height:20px;
+  }
   color: #fffcf5;
   input,
   textarea {
@@ -215,23 +223,6 @@ body {
     cursor: pointer;
   }
 }
-.contato-container {
-  position: relative;
-  padding-top: 1em;
-  &:before {
-    content: ' ';
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    background-color: #eee;
-    background-image: url('/img/png/bgcells.png');
-    background-repeat: repeat;
-    background-size: auto 100%;
-    height:20px;
-  }
-}
-
 #footer{
   background-color: $cor-branco;
   .footer-logo{
@@ -256,3 +247,24 @@ body {
     }
   }
 }
+
+/*
+* Classes genéricas
+*/
+  .bg-trasparente{
+    background-color: transparent!important;
+    @include transition (all 1s ease-in);
+  }
+  .bg-preto{
+    background-color: $cor-preto!important;
+    @include transition (all 1s ease-in);
+  }
+  .titulo-secao-branco,
+  .titulo-secao-preto {
+    font-size: 4em;
+    padding-top: 0.7em;
+    padding-bottom: 1em;
+  }
+  .padding-4 {
+    padding: 4em;
+  }

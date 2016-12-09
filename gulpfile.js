@@ -21,13 +21,14 @@ elixir(function(mix) {
         '/../../../node_modules/font-awesome/css/font-awesome.css',
         '/../../../node_modules/animate.css/animate.css',
         '/../../../node_modules/select2/dist/css/select2.css',
-        '/../../../node_modules/sweetalert2/dist/sweetalert2.min.css',
+        '/../../../node_modules/sweetalert2/dist/sweetalert2.min.css'
     ], 'public/css/app.css');
 
     mix.browserify('app.js');
 
     mix.scripts([
         '/../../../node_modules/masonry-layout/dist/masonry.pkgd.min.js',
+        'vendor/parallax.js',
         'vendor/wordrotate.js'
     ], 'public/js/tesseract.js');
 

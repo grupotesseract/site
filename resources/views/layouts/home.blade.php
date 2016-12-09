@@ -4,27 +4,27 @@
 
 @section('page-content')
         {{-- Seção CABEÇALHO --}}
-            @include('home.presentation.index')
+          @include('home.presentation.index')
         {{-- Fim da Seção CABEÇALHO --}}
 
         {{-- Seção INTRO --}}
-            @include('home.intro.index')
+          @include('home.intro.index')
         {{-- Fim da Seção INTRO --}}
 
         {{-- Seção INSTITUCIONAL --}}
-              @include('home.institutional.index')
+          @include('home.institutional.index')
         {{-- Fim da Seção INSTITUCIONAL --}}
 
         {{-- Seção PORTFOLIO --}}
-              @include('home.portfolio.index')
+          @include('home.portfolio.index')
         {{-- Fim da Seção PORTFOLIO --}}
 
         {{-- Seção EQUIPE --}}
-              @include('home.team.index')
+          @include('home.team.index')
         {{-- Fim da Seção EQUIPE --}}
 
         {{-- Seção CONTATO --}}
-              @include('home.contact.index')
+          @include('home.contact.index')
         {{-- Fim da Seção CONTATO --}}
 @endsection
 {{-- Incluindo FOOTER --}}
