@@ -7,7 +7,7 @@
           {!! Form::open(['url' => ['fotoUser'], 'files' => true, 'id' => 'altera-foto-form' ]) !!}
             <div class="col">
             <div class="preview-image">
-                <img id="preview" src="{{ isset($user->fotoAvatar) ? $user->fotoAvatar->URL : $user->photoURL }}" />
+                <img id="preview" src="{{ $user->fotoAvatar ? $user->fotoAvatar->URL : $user->fotoURL }}" />
                 </div>
 
             <label class="btn btn-upload" for="input-foto-user" title="Upload image file">

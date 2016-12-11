@@ -21,7 +21,7 @@
 
                ?>
                <li class="thumbnail-grande <?php echo $cssSize; ?>">
-                  <img src="{{ $Membro->fotoURL }}" class="equipe-img-grande" />
+                  <img src="{{ $Membro->fotoAvatar ? $Membro->fotoAvatar->URL : $Membro->fotoURL }}" class="equipe-img-grande" />
                    <span class="conteudo-texto-grande">
                      <span>
                        <h4>{{ $Membro->name }}</h4>

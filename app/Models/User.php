@@ -73,7 +73,7 @@ class User extends Model
      */
     public function getFotoURLAttribute()
     {
-        $url = $this->photo ? $this->photo : url('img/jpg/dummy-membro.jpg');
+        $url = $this->photo ? '/'.$this->photo : url('/img/jpg/dummy-membro.jpg');
 
         return $url;
     }
