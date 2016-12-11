@@ -10,15 +10,12 @@
         <div class="container">
           <div class="col-xs-12">
             <ul class="img-list grid">
-              {{-- SEÇÃO EQUIPE --}
-              @foreach ($Users as $Membro)
-              }
+              {{-- SEÇÃO EQUIPE --}}
+              @foreach ($Users as $k => $Membro)
               <?php
                 //randomiza tamanho dos users
-                  $rand = rand(0,10);
-                  if($rand < 9) {
-                    $cssSize = 'grid-item';
-                  } else {
+                  $cssSize = 'grid-item';
+                  if($k == 0) {
                     $cssSize = 'grid-item grid-item-2';
                   }
 
@@ -31,19 +28,31 @@
                        <p>{{ $Membro->role->name }}</p>
                      </span>
                       <ul class="social-links">
-                          @if ($Membro->social->github)
-                              <a href="{{ url($Membro->social->github) }}"><i class="fa fa-github"></i></a>
+                          @if ($Membro->email)
+                            <li>
+                              <a href="mailto:{{ $Membro->email }}"><i class="fa fa-0-8x fa-envelope"></i></a>
+                            </li>
                           @endif
                           @if ($Membro->social->facebook)
+                            <li>
                               <a href="{{ $Membro->social->facebook }}"><i class="fa fa-facebook"></i></a>
+                            </li>
                           @endif
                           @if ($Membro->social->portfolio)
-                              <a href="{{ $Membro->social->portfolio }}"><i class="fa fa-portfolio"></i></a>
+                            <li>
+                              <a href="{{ $Membro->social->portfolio }}"><i class="fa fa-external-link"></i></a>
+                            </li>
                           @endif
                           @if ($Membro->social->googleplus)
+                            <li>
                               <a href="{{ $Membro->social->googleplus }}"><i class="fa fa-googleplus"></i></a>
+                            </li>
                           @endif
-                      </ul>
+                          @if ($Membro->social->github)
+                            <li>
+                              <a href="{{ $Membro->social->github }}"><i class="fa fa-github"></i></a>
+                            </li>
+                          @endif                      </ul>
                    </span>
                   </li>
               @endforeach

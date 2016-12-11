@@ -2,6 +2,10 @@
 /*==============================================================================
   Definições básicas do site: fontes, cores de link, etc
 ==============================================================================*/
+@import "mixins/_mixins";
+@import "bibliotecas/cores";
+@import "bibliotecas/fontes";
+@import "bibliotecas/utilitarios";
 
 body {
   margin: -1;
@@ -10,49 +14,49 @@ body {
   font-family: $font-family-jaapokki-regular;
   color: white;
   background-color: #1D1D1D;
+  overflow-x: hidden;
 }
 
-#apresentacao{
-  #menu-principal{
-    display: block;
-    position: fixed;
-    background-color: $cor-preto;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    @include transition (height 2s);
-    @include transition (background-color 2s);
-    .navbar-logo{
-      text-decoration: none;
-      img{
-        height: 50vh;
-        width: 100%;
-        position: relative;
-        top: 20%;
-        margin: 0 auto;
-        @include transition (height 2s);
-      }
-      h1{
-        position: relative;
-        top: 20%;
-        color: $cor-branco;
-        font-size: 5rem;
-        text-align: center;
-        @include transition (opacity 2s);
-      }
+#menu-principal{
+  display: block;
+  position: fixed;
+  // height: 100vh;
+  @include transition (all 1s ease-in);
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 60px;
+  .navbar-logo{
+    text-decoration: none;
+    img{
+      // height: 50vh;
+      height: 45px;
+      @include transition (height 2s);
+      width: auto;
+      position: relative;
+      //top: 20%;#
     }
-    ul li a{
-      text-transform: lowercase;
-      text-decoration: none;
+    h1{
+      display:none;
+      position: relative;
+      top: 20%;
       color: $cor-branco;
+      font-size: 5rem;
+      text-align: center;
+      @include transition (opacity 2s);
     }
+
+  }
+  ul li a{
+    text-transform: lowercase;
+    text-decoration: none;
+    color: $cor-branco;
   }
 }
-
 #intro {
+  padding: 0;
   .cd-intro{
     &:before{
       content: ' ';
@@ -83,6 +87,7 @@ body {
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+      margin: 0em 0em;
       .cd-headline{
         position: relative;
         top: 35%;
@@ -91,12 +96,49 @@ body {
       }
   }
 }
-
-#equipe {
-  width: 100vw;
-  height: 100vh;
-  background-color: #fffcf5;
+#institucional {
+  padding: 2rem 0;
   color: #1d1d1d;
+  background-color: #fffcf5;
+  .institucional-titulo{
+    @extend .texto-maiusculo;
+    @extend .font-jaapokki-enhance;
+  }
+  .institucional-subtitulo{
+    @extend .texto-maiusculo;
+    @extend .font-jaapokki-subtract;
+    small{
+      position: relative;
+      right: 33.5%;
+    }
+  }
+  .alinha-assinatura {
+    display: inline-block;
+    float: right;
+    text-align: left;
+  }
+}
+#portfolio {
+  background-color: $cor-branco;
+  .titulo-trabalho {
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+  }
+  .parallax {
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    a {
+      color: white;
+    }
+  }
+}
+#equipe {
+  padding: 2rem 0;
+  width: 100vw;
+  color: #1d1d1d;
+  background-color: #fffcf5;
   img {
     width:100%;
   }
@@ -104,13 +146,65 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
+    width:100%;
+    height:100%;
+    color: white;
+    background-color: rgba(0,0,0, 0.7);
+    opacity: 0;
+    transition: opacity 1s;
+    padding:0.5em;
   }
-  ul { list-style: none; }
-  .grid-item { width: 150px; }
-  .grid-item-2 { width: 300px; }
+  ul {
+    list-style: none;
+    li {
+      &:hover .conteudo-texto-grande {
+        opacity: 1;
+      }
+    }
+  }
+  ul.social-links {
+    position: absolute;
+    bottom: 0.2em;
+    right: 0.2em;
+    li {
+      position:relative;
+      float:right;
+      a {
+        vertical-align: middle;
+        display: inline-block;
+        color: white;
+        font-size: 1.2em;
+        margin: 0.2em;
+      }
+    }
+  }
+  .grid-item {
+    width: 145px;
+    margin-bottom: 26px;
+    img { width:145px; height:145px;}
+  }
+  .grid-item-2 {
+    width: 316px;
+    font-size: 1.5em;
+    img { width:316px; height:316px;}
+   }
+  .grid-item-3 { width: 420px; }
 }
-
 #contato {
+  position: relative;
+  padding-top: 1em;
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    background-color: #eee;
+    background-image: url('/img/png/bgcells.png');
+    background-repeat: repeat;
+    background-size: auto 100%;
+    height:20px;
+  }
   color: #fffcf5;
   input,
   textarea {
@@ -129,23 +223,6 @@ body {
     cursor: pointer;
   }
 }
-.contato-container {
-  position: relative;
-  padding-top: 1em;
-  &:before {
-    content: ' ';
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    background-color: #eee;
-    background-image: url('/img/png/bgcells.png');
-    background-repeat: repeat;
-    background-size: auto 100%;
-    height:20px;
-  }
-}
-
 #footer{
   background-color: $cor-branco;
   .footer-logo{
@@ -170,3 +247,24 @@ body {
     }
   }
 }
+
+/*
+* Classes genéricas
+*/
+  .bg-trasparente{
+    background-color: transparent!important;
+    @include transition (all 1s ease-in);
+  }
+  .bg-preto{
+    background-color: $cor-preto!important;
+    @include transition (all 1s ease-in);
+  }
+  .titulo-secao-branco,
+  .titulo-secao-preto {
+    font-size: 4em;
+    padding-top: 0.7em;
+    padding-bottom: 1em;
+  }
+  .padding-4 {
+    padding: 4em;
+  }
