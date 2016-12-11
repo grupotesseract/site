@@ -20,5 +20,17 @@ body.admin, html.admin {
             margin: 0 .3rem;
         }
     }
+
+    .preview-image {
+        img {
+            max-width: 12rem;
+            max-height: 12rem;
+        }
+    }
+
+    .form-container {
+        
+    }
+
 }
 

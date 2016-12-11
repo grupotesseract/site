@@ -22,3 +22,4 @@ Route::group(['prefix' => 'team-tesseract'], function () {
 });
 
 Route::post('contato', 'ContatoController@postContato');
+Route::post('fotoUser', 'PhotoController@postUploadUserPhoto');

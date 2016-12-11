@@ -3,6 +3,31 @@
 @section('content')
     <legend><h3>Edição de Integrante Tesseract</h3></legend>
     <div class="row">
+        <div class="col-xs-12">
+          {!! Form::open(['url' => ['fotoUser'], 'files' => true, 'id' => 'altera-foto-form' ]) !!}
+            <div class="col">
+            <div class="preview-image">
+                <img id="preview" src="{{ isset($user->fotoAvatar) ? $user->fotoAvatar->URL : $user->photoURL }}" />
+                </div>
+
+            <label class="btn btn-upload" for="input-foto-user" title="Upload image file">
+                <input class="sr-only" id="input-foto-user" name="file" accept="image/*" type="file" >
+                <span data-original-title="Import image with Blob URLs" class="docs-tooltip" data-toggle="tooltip" title="">
+                    <span class="fa fa-upload"></span>
+                    SELECIONE UMA IMAGEM
+                </span>
+            </label>
+
+            {!! Form::hidden('owner_id', $user->id) !!}
+            {!! Form::hidden('owner_type', get_class($user)) !!}
+
+            {!! Form::submit( "TROCAR FOTO", [ 'class' => 'btn btn-acao' ] ) !!}
+            </div>
+          {!! Form::close() !!}
+
+        </div>
+    </div>
+    <div class="row">
         <form action="{{ url('team-tesseract/'. $user->id) }}" method="POST" class="col-md-12" role="form">
             {{ method_field('PUT') }}
             {!! csrf_field() !!}

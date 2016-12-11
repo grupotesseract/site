@@ -91,4 +91,17 @@ class UserRepository
 
         return $user;
     }
+
+    /**
+     * Metodo para remover a fotoAvatar atual de um user caso existir
+     *
+     * @param $user_id - ID do usuario que tera o avatar deletado
+     * @return Resultado da operacao de DELETE (count das fotos deletadas)
+     */
+    public function deleteFotoAvatarUsuario($user_id)
+    {
+        $user = $this->findById($user_id);
+        return $user->fotoAvatar()->delete();
+    }
+
 }

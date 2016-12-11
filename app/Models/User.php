@@ -18,6 +18,11 @@ class User extends Model
         'curriculum_id'
     ];
 
+
+    /**********************
+     * Model Relations
+     ************************/
+
     /**
      * Get the curriculum record associated with the user.
      */
@@ -41,6 +46,19 @@ class User extends Model
     {
         return $this->hasOne(\App\Models\Social::class);
     }
+
+    /**
+     * Get the photo record associated with the user.
+     */
+    public function fotoAvatar()
+    {
+        return $this->morphOne(\App\Models\Photo::class, 'owner');
+    }
+
+
+    /**********************
+     * Acessors / Mutators
+     ************************/
 
     /**
      * Definindo um acessor para o nome formatado
