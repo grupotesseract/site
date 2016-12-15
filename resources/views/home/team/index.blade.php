@@ -28,13 +28,13 @@
                        <p>{{ $Membro->role->name }}</p>
                      </span>
                       <ul class="social-links">
-                          @if($Membro->email)
-                            <li>
-                              <a href="mailto:{{ $Membro->email }}"><i class="fa fa-0-8x fa-envelope"></i></a>
-                            </li>
-                          @else($Membro->social->portfolio)
+                          @if($Membro->social->portfolio)
                             <li>
                               <a href="{{ $Membro->social->portfolio }}"><i class="fa fa-external-link"></i></a>
+                            </li>
+                          @else($Membro->email)
+                            <li>
+                              <a href="mailto:{{ $Membro->email }}"><i class="fa fa-0-8x fa-envelope"></i></a>
                             </li>
                           @endif
                           @if($Membro->social->github)
