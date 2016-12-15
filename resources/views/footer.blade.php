@@ -1,7 +1,7 @@
 		<footer id="footer" class="row">
 	        <div class="container">
 	            <div class="col-md-4 offset-md-4">
-	            	<div class="row mt-3 mb-4 text-xs-center">
+	            	<div class="row pt-2 pb-2 text-xs-center">
 	            		<a href="{{ url('/') }}">
 	              			<img class="img-fluid footer-logo" src="img/svg/logo-tesseract-preto-simples.svg"/>
 	              		</a>
