@@ -55,11 +55,11 @@
       {{-- Facebook OpenGraph metatags --}}
         <meta property="og:locale" content="pt_BR">
         <meta property="og:type" content="website">
-        <meta property="fb:app_id" content="Somos um grupo de desenvolvedores/artistas que desenvolvem aplicativos, sites, sistemas, e-commerces, blogs e tudo relacionado à tecnologia. Venha nos visitar e faça já seu orçamento.">
-        <meta property="og:title" content="Grupo Tesseract">
+        <meta property="fb:app_id" content="">
+        <meta property="og:title" content="Grupo Tesseract - Desenvolvimento">
         <meta property="og:site_name" content="Tesseract Desenvolvimento">
         <meta property="og:url" content="http://grupotesseract.com.br">
-        <meta property="og:description" content="">
+        <meta property="og:description" content="Somos um grupo de desenvolvedores/artistas que desenvolvem aplicativos, sites, sistemas, e-commerces, blogs e tudo relacionado à tecnologia. Venha nos visitar e faça já seu orçamento.">
         <meta property="og:image" content="{{ asset('img/png/facebook-og/fb-og_img.png') }}">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="1800" />
