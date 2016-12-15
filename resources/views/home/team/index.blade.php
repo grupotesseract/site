@@ -32,20 +32,9 @@
                             <li>
                               <a href="mailto:{{ $Membro->email }}"><i class="fa fa-0-8x fa-envelope"></i></a>
                             </li>
-                          @endif
-                          @if($Membro->social->portfolio)
+                          @else($Membro->social->portfolio)
                             <li>
                               <a href="{{ $Membro->social->portfolio }}"><i class="fa fa-external-link"></i></a>
-                            </li>
-                          @endif
-                          @if($Membro->social->linkedin)
-                            <li>
-                              <a href="{{ $Membro->social->linkedin }}"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                          @endif
-                          @if($Membro->social->facebook)
-                            <li>
-                              <a href="{{ $Membro->social->facebook }}"><i class="fa fa-facebook"></i></a>
                             </li>
                           @endif
                           @if($Membro->social->github)
@@ -58,7 +47,16 @@
                               <a href="{{ $Membro->social->googleplus }}"><i class="fa fa-googleplus"></i></a>
                             </li>
                           @endif
-                                               
+                          @if($Membro->social->facebook)
+                            <li>
+                              <a href="{{ $Membro->social->facebook }}"><i class="fa fa-facebook"></i></a>
+                            </li>
+                          @endif
+                          @if($Membro->social->linkedin)
+                            <li>
+                              <a href="{{ $Membro->social->linkedin }}"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                          @endif                
                       </ul>
                    </span>
                   </li>
