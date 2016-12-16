@@ -58,9 +58,9 @@ function trocaBGSlideHome()
             'background',
         bgs[atual = ++atual % bgs.length]);
 
-        setTimeout(proximoBG, 10000);
+        setTimeout(proximoBG, 15000);
     }
-    setTimeout(proximoBG, 10000);
+    setTimeout(proximoBG, 15000);
     elemento.css('background', bgs[0]);
 }
 

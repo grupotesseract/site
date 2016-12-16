@@ -237,8 +237,8 @@
 	    bottom: 0;
 	    height: 3px;
 	    width: 0;
-	    -webkit-transition: width .5s ease, background .5s ease;
-		-moz-transition: width .5s ease, background .5s ease;
+	    -webkit-transition: width 0s ease, background .5s ease;
+		-moz-transition: width 0s ease, background .5s ease;
 	    transition: width 0s ease, background .5s ease;
 	}
 	.sliding-in-off:after {

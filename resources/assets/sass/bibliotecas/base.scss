@@ -98,7 +98,7 @@ body {
   }
 }
 #institucional {
-  padding: 2rem 0;
+  padding: 5rem 0 2rem;
   color: #1d1d1d;
   background-color: #fffcf5;
   .institucional-titulo{
@@ -193,7 +193,7 @@ body {
 }
 #contato {
   position: relative;
-  padding-top: 1em;
+  padding: 2rem 0;
   &:before {
     content: ' ';
     position: absolute;
