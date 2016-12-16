@@ -58,6 +58,7 @@ body {
 #intro {
   padding: 0;
   .cd-intro{
+    @include transition (all .2s ease-in);
     &:before{
       content: ' ';
       position: absolute;

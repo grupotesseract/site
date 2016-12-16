@@ -28,7 +28,8 @@ window.pace = require('pace');
 // SweetAlert 2 [https://github.com/limonte/sweetalert2]
 window.swal = require('sweetalert2');
 
-function revealMenuOnScroll() {
+function revelaMenuOnScroll() 
+{
 	$(window).scroll(function(){
 		if($(window).scrollTop() === 0){
 			$("#menu-principal").removeClass("bg-preto");
@@ -41,6 +42,28 @@ function revealMenuOnScroll() {
 	});
 }
 
+function trocaBGSlideHome()
+{
+    var elemento = $("#intro .cd-intro"),
+    	bgs = [
+	      'url(../img/jpg/background/bg01.jpg)',
+	      'url(../img/jpg/background/bg02.jpg)',
+	      'url(../img/jpg/background/bg03.jpg)',
+	      'url(../img/jpg/background/bg04.jpg)', 
+	      'url(../img/jpg/background/bg05.jpg)'],
+      	atual = 0;
+
+    function proximoBG() {
+        elemento.css(
+            'background',
+        bgs[atual = ++atual % bgs.length]);
+
+        setTimeout(proximoBG, 10000);
+    }
+    setTimeout(proximoBG, 10000);
+    elemento.css('background', bgs[0]);
+}
+
 $('#menu li').each(function () {
     if ($(this).children('a').attr('href') == window.location.href) {
         $(this).addClass('active');
@@ -51,7 +74,8 @@ $('#menu li').each(function () {
 $('.add-select2').select2();
 
 $(document).ready(function() {
-	window.onload = revealMenuOnScroll();
+	window.onload = revelaMenuOnScroll();
+	trocaBGSlideHome();
 	smoothScroll.init();
 
   $('.grid').masonry({

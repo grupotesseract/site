@@ -7,7 +7,7 @@
 	$border-un:1em;
 
 /*
-* Fontes
+*	Fontes
 */
 	// EDMOND-SANS
 	// JAAPOKKI
@@ -38,7 +38,7 @@
 	}
 
 /*
-*  FontAwesome - More icon sizes
+*	FontAwesome - More icon sizes
 */
 	.fa-0-1x {
 		font-size: 0.1*$fa-un;
@@ -109,3 +109,208 @@
 	.fa-10x{
 		font-size: 10*$fa-un;
 	}
+
+/*
+*	Animações do Menu
+*/
+// Cima para Baixo
+	.sliding-cima-pra-baixo {
+		display: inline-block;
+	}
+	.sliding-cima-pra-baixo:after {
+		content: '';
+		display: block;
+		height: 0;
+		width: 100%;
+		background: transparent;
+		-webkit-transition: height .5s ease, background-color .5s ease;
+		-moz-transition: height .5s ease, background-color .5s ease;
+		transition: height .5s ease, background-color .5s ease;
+	}
+	.sliding-cima-pra-baixo:hover:after {
+		height: 3px;
+		background: white;
+	}
+
+	// Baixo para Cima
+
+// Baixo para Cima
+	.sliding-baixo-para-cima {
+		display: inline-block;
+		position: relative;
+	}
+	.sliding-baixo-para-cima:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 0px;
+		width: 100%;
+		background: transparent;
+		-webkit-transition: all ease 0.5s;
+		-moz-transition: all ease 0.5s;
+		transition: all ease 0.5s;
+	}
+	.sliding-baixo-para-cima:hover:after {
+		height: 3px;
+		background: white;
+	}
+
+// Esquerda para Direita
+	.sliding-esquerda-para-direita {
+		display: inline-block;
+	}
+	.sliding-esquerda-para-direita:after {
+		content: '';
+		display: block;
+		height: 3px;
+		width: 0;
+		background: transparent;
+		-webkit-transition: width .5s ease, background-color .5s ease;
+		-moz-transition: width .5s ease, background-color .5s ease;
+		transition: width .5s ease, background-color .5s ease;
+	}
+	.sliding-esquerda-para-direita:hover:after {
+		width: 100%;
+		background: white;
+	}
+
+// Direita para Esquerda
+	.sliding-direita-para-esquerda {
+	    display: inline-block;
+	    position: relative;
+	    padding-bottom: 3px;
+	}
+ 
+	.sliding-direita-para-esquerda:after {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    height: 3px;
+	    width: 0;
+	    background: transparent;
+	    -webkit-transition: width .5s ease, background-color .5s ease;
+		-moz-transition: width .5s ease, background-color .5s ease;
+	    transition: width .5s ease, background-color .5s ease;
+	}
+	 
+	.sliding-direita-para-esquerda:hover:after {
+	    width: 100%;
+	    background: white;
+	}
+
+// Meio para Fora
+	.sliding-meio-fora {
+		display: inline-block;
+		position: relative;
+		padding-bottom: 2px;
+	}
+	.sliding-meio-fora:after {
+		content: '';
+		display: block;
+		margin: auto;
+		height: 3px;
+		width: 0px;
+		background: transparent;
+		-webkit-transition: width .5s ease, background-color .5s ease;
+		-moz-transition: width .5s ease, background-color .5s ease;
+		transition: width .5s ease, background-color .5s ease;
+	}
+	.sliding-meio-fora:hover:after {
+		width: 100%;
+		background: white;
+	}
+
+// In/Off
+	.sliding-in-off {
+	    display: inline-block;
+	    position: relative;
+	    padding-bottom: 3px;
+	}
+	.sliding-in-off:before {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    height: 3px;
+	    width: 0;
+	    -webkit-transition: width .5s ease, background .5s ease;
+		-moz-transition: width .5s ease, background .5s ease;
+	    transition: width 0s ease, background .5s ease;
+	}
+	.sliding-in-off:after {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    height: 3px;
+	    width: 0;
+	    background: white;
+	    -webkit-transition: width .5s ease;
+		-moz-transition: width .5s ease;
+	    transition: width .5s ease;
+	}
+	.sliding-in-off:hover:before {
+	    width: 100%;
+	    background: white;
+	    -webkit-transition: width .5s ease;
+		-moz-transition: width .5s ease;
+	    transition: width .5s ease;
+	}
+	.sliding-in-off:hover:after {
+	    width: 100%;
+	    background: transparent;
+	    -webkit-transition:  all 0s ease;
+		-moz-transition:  all 0s ease;
+	    transition: all 0s ease;
+	}
+
+// In/Off Inverso
+	.sliding-in-off-inverso {
+	    display: inline-block;
+	    position: relative;
+	    padding-bottom: 3px;
+	}
+	.sliding-in-off-inverso:before {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    height: 3px;
+	    width: 100%;
+	    -webkit-transition: width 0s ease;
+		-moz-transition: width 0s ease;
+	    transition: width 0s ease;
+	}
+	.sliding-in-off-inverso:after {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    height: 3px;
+	    width: 100%;
+	    background: white;
+	    -webkit-transition: width .5s ease;
+		-moz-transition: width .5s ease;
+	    transition: width .5s ease;
+	}
+	.sliding-in-off-inverso:hover:before {
+	    width: 0%;
+	    background: white;
+	    -webkit-transition: width .5s ease;
+		-moz-transition: width .5s ease;
+	    transition: width .5s ease;
+	}
+	.sliding-in-off-inverso:hover:after {
+	    width: 0%;
+	    background: transparent;
+	    -webkit-transition: width 0s ease;
+		-moz-transition: width 0s ease;
+	    transition: width 0s ease;
+}
