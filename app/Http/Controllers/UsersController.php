@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\UserEditRequest;
 use App\Http\Requests\UserCreateRequest;
 use App\Repositories\UserRepository as User;
+use App\Repositories\SkillRepository as Skill;
 
 class UsersController extends Controller
 {
@@ -15,13 +16,19 @@ class UsersController extends Controller
     protected $users;
 
     /**
+     * Instancia do repositorio de Users contendo a logica operacional
+     */
+    protected $skillRepository;
+
+    /**
      * Construtor rebendo instancia de UseRespository por injeção de dependencia
      *
      * @param App\Repositories\UserRepository - Instancia do repositorio de users
      */
-    public function __construct(User $users)
+    public function __construct(User $users, Skill $skillRepository)
     {
         $this->users = $users;
+        $this->skillRepository = $skillRepository;
     }
 
     public function index()
@@ -38,7 +45,14 @@ class UsersController extends Controller
 
     public function store(UserCreateRequest $request)
     {
-        $this->users->saveUser($request->all());
+        /** Pegando os dados do form em uma variavel para poder modifica-los **/
+        $data = $request->all();
+
+        /** Tratando array de skills criando novas se necessário **/
+        $this->skillRepository->syncPossiveisNovasSkills($data['skills']);
+
+        /** Chamando metodo para create do UserRepository **/
+        $this->users->saveUser();
 
         session()->flash('alert.message', 'Registro salvo com sucesso!');
         session()->flash('alert.style', 'success');
@@ -54,7 +68,14 @@ class UsersController extends Controller
 
     public function update(UserEditRequest $request)
     {
-        $this->users->updateUser($request->all());
+        /** Pegando os dados do form em uma variavel para poder modifica-los **/
+        $data = $request->all();
+
+        /** Tratando array de skills criando novas se necessário **/
+        $this->skillRepository->syncPossiveisNovasSkills($data['skills']);
+
+        /** Chamando metodo para update do UserRepository **/
+        $this->users->updateUser($data);
 
         session()->flash('alert.message', 'Registro atualizado com sucesso!');
         session()->flash('alert.style', 'success');

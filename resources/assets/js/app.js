@@ -71,9 +71,25 @@ $('#menu li').each(function () {
     }
 });
 
-$('.add-select2').select2();
+function matchStart (term, text) {
+  if (text.toUpperCase().indexOf(term.toUpperCase()) == 0) {
+    return true;
+  }
+
+  return false;
+}
+
+
 
 $(document).ready(function() {
+
+  /** Dando play no Select2 **/
+  $('.add-select2').select2({
+    theme: 'classic',
+    tags: true,
+    tokenSeparators: [',', ' ']
+  });
+
 	window.onload = revelaMenuOnScroll();
 	trocaBGSlideHome();
 	smoothScroll.init();

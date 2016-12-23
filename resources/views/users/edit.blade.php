@@ -97,7 +97,7 @@
             <br>
             <legend>Conhecimentos</legend>
             <div class="form-group">
-                <select name="skills[]" id="skills[]" class="form-control add-select2" required multiple>
+                <select name="skills[]" id="skills[]" class="form-control add-select2" required multiple style="width: 75%">
                     @foreach ($skills as $id => $skillName)
                         <option value="{{ $id }}"
 

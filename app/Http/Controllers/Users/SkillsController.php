@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Users;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests\SkillRequest;
 use App\Http\Controllers\Controller;
 use App\Repositories\SkillRepository as Skills;
