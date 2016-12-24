@@ -87,7 +87,7 @@ $(document).ready(function() {
   $('.add-select2').select2({
     theme: 'classic',
     tags: true,
-    tokenSeparators: [',', ' ']
+    tokenSeparators: [',']
   });
 
 	window.onload = revelaMenuOnScroll();
