@@ -16,9 +16,18 @@
             <div class="alert alert-info">
                 @if (count($skills))
                     <p><strong>Os itens a seguir já se encontram cadastrados:</strong></p>
-                    <ul>
-                        @foreach ($skills as $skillName)
-                            <li>{{ $skillName }}</li>
+                    <ul id="skill-list">
+                        @foreach ($skills as $Skill)
+                            <li>
+                                <div class="col-md-8">
+                                     <p>{{ $Skill->name }}</p>
+                                </div>
+                                <div class="col-md-4">
+                                    {!! Form::open(['url' => $Skill->deleteURL, 'method' => 'DELETE']) !!}
+                                    {!! Form::submit('Excluir') !!}
+                                    {!! Form::close() !!}
+                                </div>
+                            </li>
                         @endforeach
                     </ul>
                 @else

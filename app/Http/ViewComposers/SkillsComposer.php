@@ -15,7 +15,7 @@ class SkillsComposer
 
     public function compose(View $view)
     {
-        $skills = $this->skills->listByName();
+        $skills = $this->skills->all();
 
         $view->with(compact('skills'));
     }

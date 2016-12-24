@@ -29,4 +29,17 @@ class SkillsController extends Controller
 
         return redirect()->back();
     }
+
+    /**
+     * Metodo para a rota de DELETE
+     */
+    public function destroy($skillID)
+    {
+        $this->skills->deleteSkill($skillID);
+
+        session()->flash('alert.message', 'Skill removida do BD com sucesso');
+        session()->flash('alert.style', 'success');
+
+        return redirect()->back();
+    }
 }

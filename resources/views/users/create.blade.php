@@ -65,13 +65,13 @@
             <legend>Conhecimentos</legend>
             <div class="form-group">
                 <select name="skills[]" id="skills[]" class="form-control add-select2" required multiple>
-                    @foreach ($skills as $id => $skillName)
-                        <option value="{{ $id }}"
+                    @foreach ($skills as $Skill)
+                        <option value="{{ $Skill->id }}"
                             @if (old('skills'))
-                                {{ in_array($id, old('skills')) ? 'selected' : '' }}
+                                {{ in_array($Skill->id, old('skills')) ? 'selected' : '' }}
                             @endif
                         >
-                            {{ $skillName }}
+                            {{ $Skill->name }}
                         </option>
                     @endforeach
                 </select>

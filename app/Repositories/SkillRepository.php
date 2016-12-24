@@ -21,6 +21,24 @@ class SkillRepository
     }
 
     /**
+     * Metodo para deletar uma Skill
+     * @param $skillID - ID da Skill a ser deletada
+     */
+    public function deleteSkill($skillID)
+    {
+        return Skill::findOrFail($skillID)->delete();
+    }
+
+
+    /**
+     * Metodo para pegar todas as Skills
+     */
+    public function all()
+    {
+        return Skill::all();
+    }
+
+    /**
      * Metodo para syncronizar criando nova skills se necessário
      *
      * @param &$arraySkills - array passado por referencia que sera tratado com as novas skills
