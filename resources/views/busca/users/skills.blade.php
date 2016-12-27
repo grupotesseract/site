@@ -27,22 +27,13 @@
     </div>
 
     @if ( isset($users) )
-    <div class="row">
+    <div class="row mt-2">
         <div class="col-xs-12">
-
-            <ul class="img-list grid">
+            <ul class="busca-users-container">
               {{-- SEÇÃO EQUIPE --}}
               @foreach ($users as $k => $Membro)
-              <?php
-                //randomiza tamanho dos users
-                  $cssSize = 'grid-item';
-                  if($k == 0) {
-                    $cssSize = 'grid-item grid-item-2';
-                  }
-
-               ?>
-               <li class="thumbnail-grande <?php echo $cssSize; ?>">
-                  <img src="{{ $Membro->fotoAvatar ? $Membro->fotoAvatar->URL : $Membro->fotoURL }}" class="equipe-img-grande" />
+               <li class="busca-users-item">
+                  <img src="{{ $Membro->fotoAvatar ? $Membro->fotoAvatar->URL : $Membro->fotoURL }}" class="" />
                    <span class="conteudo-texto-grande">
                      <span>
                        <h4>{{ $Membro->name }}</h4>
@@ -77,7 +68,7 @@
                             <li>
                               <a href="{{ $Membro->social->linkedin }}"><i class="fa fa-linkedin"></i></a>
                             </li>
-                          @endif                
+                          @endif
                       </ul>
                    </span>
                   </li>
