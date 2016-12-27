@@ -111,29 +111,38 @@ class UserRepository
 
     /**
      * Metodo para recuperar Users pelas suas Skills
-     * @param $arraySkills - Array com os nomes das skills ['Laravel', 'PHP', ...]
+     * @param $arraySkills - Array com os ids das skills
+     * @param $mustMatch - FLAG para indicar se a busca deve ser por users com todas as skills.
      * @return Collection de Users
      */
-    public function getBySkills($arraySkills)
+    public function getBySkills($arraySkills, $mustMatch = false)
     {
         $qntSkills = count($arraySkills);
 
         /** Pegando todos os users que tenham um curriculum **/
-        $users = User::whereHas('curriculum', function($curriculum) use ($arraySkills) {
+        $users = User::whereHas('curriculum', function($curriculum) use ($arraySkills, $mustMatch) {
 
             /** Todos os curriculumns que tenham essas skills **/
-            $curriculum->whereHas('skills', function ($skills) use ($arraySkills) {
+            $curriculum->whereHas('skills', function ($skills) use ($arraySkills, $mustMatch) {
 
-                foreach ($arraySkills as $key => $skillName) {
+                foreach ($arraySkills as $key => $skillID) {
 
-                    /** Caso seja a primeira Skill do array, usar where **/
+                    /** Se for a primeira skill do array **/
                     if ($key == 0) {
-                        $skills->where('name', $skillName);
+                        $skills->where('skill_id', $skillID);
                     }
 
-                    /** Se nao usar orWhere **/
+                    /** Se nao for a primeira skill do array **/
                     else {
-                        $skills->orWhere('name', $skillName);
+
+                        if ( $mustMatch ) {
+                            $skills->where('skill_id', $skillID);
+                        }
+
+                        /** Se a busca nao for por usuarios com todas as skills, usar OR WHERE **/
+                        else {
+                            $skills->orWhere('skill_id', $skillID);
+                        }
                     }
                 }
             });

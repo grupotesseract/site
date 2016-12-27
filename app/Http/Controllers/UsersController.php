@@ -38,11 +38,18 @@ class UsersController extends Controller
         return view('users.index', compact('users'));
     }
 
+    /**
+     * Rota que serve a view com o formulario para a criacao de um User
+     */
     public function create()
     {
         return view('users.create');
     }
 
+    /**
+     * Metodo que recebe a request de criacao de um user
+     * @param $request - Request contendo a logica de validação da criacao de um User
+     */
     public function store(UserCreateRequest $request)
     {
         /** Pegando os dados do form em uma variavel para poder modifica-los **/
@@ -60,12 +67,19 @@ class UsersController extends Controller
         return redirect()->back();
     }
 
+    /**
+     * Rota para servir a view de editar um User
+     */
     public function edit($userId)
     {
         $user = $this->users->findById($userId);
         return view('users.edit', compact('user'));
     }
 
+    /**
+     * Rota que recebe a request com os novos dados vindos da ediçao de um User
+     * @param $request - Request contendo a logica de validacao para a edicao de um User
+     */
     public function update(UserEditRequest $request)
     {
         /** Pegando os dados do form em uma variavel para poder modifica-los **/
@@ -81,5 +95,26 @@ class UsersController extends Controller
         session()->flash('alert.style', 'success');
 
         return redirect()->back();
+    }
+
+
+    /**
+     * Metodo para servir a view para busca de users que tenham determinadas Skills
+     */
+    public function getBuscaPorSkills()
+    {
+        return view('busca.users.skills');
+    }
+
+    /**
+     * Metodo para servir usuários que tenham determinadas Skills por POST
+     * @param $request - Request contendo as skills e checkbox para determinar se a busca é AND ou OR
+     */
+    public function postBuscaPorSkills(Request $request)
+    {
+        $users = $this->users->getBySkills($request->skills, $request->mustMatch);
+        return view('busca.users.skills')
+            ->with('users', $users)
+            ->with('currentSkills', $request->skills);
     }
 }

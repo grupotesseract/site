@@ -12,4 +12,12 @@
         <li><a href="{{ url('team-tesseract/roles') }}">Funções</a></li>
         <li><a href="{{ url('team-tesseract/create') }}">Integrantes</a></li>
     </ul>
+
+    <hr>
+
+    <h4><i class="fa fa-search"></i> <b>Buscas</b></h4>
+    <ul class="nav nav-pills nav-stacked">
+        <li><a href="{{ url('team-tesseract/busca') }}">Usuarios por suas skills</a></li>
+    </ul>
+
 </aside>

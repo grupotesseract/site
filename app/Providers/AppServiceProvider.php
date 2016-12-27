@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->composer(['users.roles.index', 'users.create', 'users.edit'], RolesComposer::class);
-        view()->composer(['users.skills.index', 'users.create', 'users.edit'], SkillsComposer::class);
+        view()->composer(['users.skills.index', 'users.create', 'users.edit', 'busca.users.skills'], SkillsComposer::class);
         view()->composer(['users.create', 'users.edit'], SocialsComposer::class);
         view()->composer(['home.team.index'], 'App\Repositories\UserRepository@injectAllUsers');
     }
