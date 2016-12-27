@@ -109,4 +109,39 @@ class UserRepository
 
     }
 
+    /**
+     * Metodo para recuperar Users pelas suas Skills
+     * @param $arraySkills - Array com os nomes das skills ['Laravel', 'PHP', ...]
+     * @return Collection de Users
+     */
+    public function getBySkills($arraySkills)
+    {
+        $qntSkills = count($arraySkills);
+
+        /** Pegando todos os users que tenham um curriculum **/
+        $users = User::whereHas('curriculum', function($curriculum) use ($arraySkills) {
+
+            /** Todos os curriculumns que tenham essas skills **/
+            $curriculum->whereHas('skills', function ($skills) use ($arraySkills) {
+
+                foreach ($arraySkills as $key => $skillName) {
+
+                    /** Caso seja a primeira Skill do array, usar where **/
+                    if ($key == 0) {
+                        $skills->where('name', $skillName);
+                    }
+
+                    /** Se nao usar orWhere **/
+                    else {
+                        $skills->orWhere('name', $skillName);
+                    }
+                }
+            });
+
+        })->get();
+
+        return $users;
+    }
 }
+
+
