@@ -112,7 +112,9 @@ class UsersController extends Controller
      */
     public function postBuscaPorSkills(Request $request)
     {
-        $users = $this->users->getBySkills($request->skills, $request->mustMatch);
+        /** Usando o repositorio de users **/
+        $users = $this->users->getBySkills($request->skills);
+
         return view('busca.users.skills')
             ->with('users', $users)
             ->with('currentSkills', $request->skills);

@@ -112,22 +112,33 @@ class UserRepository
     /**
      * Metodo para recuperar Users pelas suas Skills
      * @param $arraySkills - Array com os ids das skills
-     * @param $mustMatch - FLAG para indicar se a busca deve ser por users com todas as skills.
      * @return Collection de Users
      */
-    public function getBySkills($arraySkills, $mustMatch = false)
+    public function getBySkills($arraySkills)
     {
-        $qntSkills = count($arraySkills);
+        /** Iterando sob as skills, obtendo os usuarios para cada uma e fazendo interseccao */
+        foreach ($arraySkills as $key => $skillID) {
 
-        /** Pegando todos os users que tenham um curriculum **/
-        $users = User::whereHas('curriculum', function($curriculum) use ($arraySkills, $mustMatch) {
+            /** Pegando todos os users que tenham essa skill **/
+            $usersComEssaSkill = User::whereHas('curriculum', function($curriculum) use ($skillID) {
 
-            /** Todos os curriculumns que tenham essas skills **/
-            $curriculum->whereHas('skills', function ($skills) use ($arraySkills, $mustMatch) {
-                $skills->whereIn('skill_id', $arraySkills);
-            });
+                /** Todos os curriculumns que tenham essas skills **/
+                $curriculum->whereHas('skills', function ($skills) use ($skillID) {
+                    $skills->where('skills.id', $skillID);
+                });
 
-        })->get();
+            })->get();
+
+            /** Se for a primeira iteracao apenas pegar o resultado **/
+            if ( $key == 0 ) {
+                $users = $usersComEssaSkill;
+            }
+
+            /** Se nao for, pegar intersecao com o resultado anterior **/
+            else {
+                $users = $users->intersect($usersComEssaSkill);
+            }
+        }
 
         return $users;
     }
