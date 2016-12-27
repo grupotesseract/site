@@ -124,27 +124,7 @@ class UserRepository
 
             /** Todos os curriculumns que tenham essas skills **/
             $curriculum->whereHas('skills', function ($skills) use ($arraySkills, $mustMatch) {
-
-                foreach ($arraySkills as $key => $skillID) {
-
-                    /** Se for a primeira skill do array **/
-                    if ($key == 0) {
-                        $skills->where('skill_id', $skillID);
-                    }
-
-                    /** Se nao for a primeira skill do array **/
-                    else {
-
-                        if ( $mustMatch ) {
-                            $skills->where('skill_id', $skillID);
-                        }
-
-                        /** Se a busca nao for por usuarios com todas as skills, usar OR WHERE **/
-                        else {
-                            $skills->orWhere('skill_id', $skillID);
-                        }
-                    }
-                }
+                $skills->whereIn('skill_id', $arraySkills);
             });
 
         })->get();

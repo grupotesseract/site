@@ -15,8 +15,8 @@
                         >{{ $Skill->name }}</option>
                     @endforeach
                 </select>
-            <div class="form-group mt-1">
-                {!! Form::checkbox('mustMatch', true) !!}
+            <div class="form-group mt-1 hidden">
+                {!! Form::checkbox('mustMatch', true, false, ['disabled']) !!}
                 {!! Form::label('mustMatch', 'Apenas usuários que manjem todas as skills?') !!}
             </div>
 
