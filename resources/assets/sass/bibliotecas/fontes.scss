@@ -79,3 +79,17 @@ $font-family-jaapokki-enhance: 'Jaapokki Enhance', serif, sans-serif;
   font-style: normal;
 }
 $font-family-jaapokki-subtract: 'Jaapokki Subtract', serif, sans-serif;
+@font-face {
+  font-family: 'Open Sans Light Italic';
+  src: url('../fonts/opensans/OpenSans-LightItalic.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: italic;
+}
+$font-family-opensans-light-italic: 'Open Sans Light Italic', serif, sans-serif;
+@font-face {
+  font-family: 'DejaVu Sans Extra Light';
+  src: url('../fonts/dejavusans/DejaVuSans-ExtraLight.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+$font-family-dejavusans-extra-light: 'DejaVu Sans Extra Light', serif, sans-serif;

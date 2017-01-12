@@ -20,6 +20,7 @@ class AppServiceProvider extends ServiceProvider
         view()->composer(['users.skills.index', 'users.create', 'users.edit', 'busca.users.skills'], SkillsComposer::class);
         view()->composer(['users.create', 'users.edit'], SocialsComposer::class);
         view()->composer(['home.team.index'], 'App\Repositories\UserRepository@injectAllUsers');
+        view()->composer(['equipe.membros.index'], 'App\Repositories\UserRepository@injectAllUsers');
     }
 
     /**

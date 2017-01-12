@@ -55,7 +55,7 @@ body {
     color: $cor-branco;
   }
 }
-#intro {
+#intro, #intro-equipe{
   padding: 0;
   .cd-intro{
     @include transition (all .2s ease-in);
@@ -97,6 +97,43 @@ body {
       }
   }
 }
+#intro-equipe{
+  padding: 0;
+  .container-header{
+    &:before{
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 20em;
+      z-index: 1;
+      opacity: .20;
+      background:
+        radial-gradient(circle farthest-side at 0% 50%,#7F7F7F 23.5%,rgba(0,0,0,0.2) 0)21px 30px,
+        radial-gradient(circle farthest-side at 0% 50%,#252525 24%,rgba(25,25,25,0) 0)19px 30px,
+        linear-gradient(#7F7F7F 14%,rgba(25,25,25,0) 0, rgba(25,25,25,0) 85%,#7F7F7F 0)0 0,
+        linear-gradient(150deg,#7F7F7F 24%,#252525 0,#252525 26%,rgba(25,25,25,0) 0,rgba(25,25,25,0) 74%,#252525 0,#252525 76%,#7F7F7F 0)0 0,
+        linear-gradient(30deg,#7F7F7F 24%,#252525 0,#252525 26%,rgba(25,25,25,0) 0,rgba(25,25,25,0) 74%,#252525 0,#252525 76%,#7F7F7F 0)0 0,
+        linear-gradient(90deg,#252525 2%,#7F7F7F 0,#7F7F7F 98%,#252525 0%)0 0 #7F7F7F;
+        background-size: 40px 60px;
+      }
+    background-image: url("/img/jpg/background/bg02.jpg");
+    text-align: center;
+    width: 100vw;
+    height: 20em;
+    margin: 0;
+  }
+  .titulo-pagina{
+    position: relative;
+    color: #fff;
+    top: 35%;
+    font-size: 5em;
+    text-shadow: -1px 3px 3px rgba(150, 150, 150, 0.75);
+    z-index: 3;
+  }
+}
+
 #institucional {
   padding: 5rem 0 2rem;
   color: #1d1d1d;
@@ -249,6 +286,79 @@ body {
   }
 }
 
+/*
+*PÁGINA MEMBROS
+*/
+#membros{
+  color: $cor-preto;
+  background-color: $cor-branco;
+  padding-top: 1em;
+  .texto-introducao{
+    font-family: $font-family-opensans-light-italic;
+    font-size: 1.6em;
+  }
+  .container-membros{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack:center;
+    justify-content: center;
+  }
+  .card-membro{
+    position:relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 250px;
+    width: 160px;
+    padding: 20px;
+    margin : 0 5px 20px 5px;
+    background-color: white;
+    border: 1px solid #d8d8d8;
+    border-radius: 2px;
+    @include transition (all .15s ease-in);
+    .imagem_avatar{
+      width: 120px;
+      height: 120px;
+      overflow: hidden;
+      border-radius: 75px;
+      margin: 0;
+      flex-shrink: 0;
+      img{
+        max-width: 100%;
+      }
+    }
+    h4{
+      margin: 0.6em 0 0 0;
+      font-size: 1.2em;
+      font-family:"Arial";
+      font-weight: 600;
+    }
+    h5{
+      font-size: 1em;
+      font-family:"Arial";
+      font-weight: 100;
+      margin: 0.1em 0 0 0;
+    }
+    .social-links{
+      display: flex;
+      vertical-align: middle;
+      margin:  0 auto;
+      padding: 0;
+      li {
+        position:relative;
+        list-style: none;
+        padding: 0.2em;
+        a {
+          display: inline-block;
+          color: black;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
 /*
 * Classes genéricas
 */

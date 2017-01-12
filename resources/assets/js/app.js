@@ -28,7 +28,7 @@ window.pace = require('pace');
 // SweetAlert 2 [https://github.com/limonte/sweetalert2]
 window.swal = require('sweetalert2');
 
-function revelaMenuOnScroll() 
+function revelaMenuOnScroll()
 {
 	$(window).scroll(function(){
 		if($(window).scrollTop() === 0){
@@ -49,7 +49,7 @@ function trocaBGSlideHome()
 	      'url(../img/jpg/background/bg01.jpg)',
 	      'url(../img/jpg/background/bg02.jpg)',
 	      'url(../img/jpg/background/bg03.jpg)',
-	      'url(../img/jpg/background/bg04.jpg)', 
+	      'url(../img/jpg/background/bg04.jpg)',
 	      'url(../img/jpg/background/bg05.jpg)'],
       	atual = 0;
 

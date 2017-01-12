@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('layouts.home');
 });
+Route::get('/equipe', 'EquipeController@index');
 
 Route::resource('team-tesseract', 'UsersController', ['except' => 'show']);
 Route::group(['prefix' => 'team-tesseract'], function () {
