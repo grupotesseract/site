@@ -65,7 +65,7 @@ body {
       top: 0;
       left: 0;
       width: 100vw;
-      height: 100vh;
+      height: 80vh;
       z-index: 1;
       opacity: .20;
       background:
@@ -80,7 +80,7 @@ body {
       $bgimg: random(5);
       position: relative;
       width: 100vw;
-      height: 100vh;
+      height: 80vh;
       z-index: 0;
       background-image: url("/img/jpg/background/bg0#{$bgimg}.jpg");
       background-position: center center;
@@ -91,10 +91,67 @@ body {
       margin: 0em 0em;
       .cd-headline{
         position: relative;
-        top: 35%;
+        top: 25%;
+        text-shadow: -1px 3px 3px rgba(150, 150, 150, 0.75);
+        z-index: 3;
+        text-align: center;
+      }
+      .frase-secundaria{
+        position: relative;
+        top: 25%;
         text-shadow: -1px 3px 3px rgba(150, 150, 150, 0.75);
         z-index: 3;
       }
+      .frase-terciaria{
+        position: relative;
+        top: 35%;
+        text-shadow: -1px 3px 3px rgba(150, 150, 150, 0.75);
+        z-index: 3;
+        display: flex;
+        padding: 0 10em;
+        margin: auto;
+        span{
+          margin: 0 auto;
+          .icone-headline{
+            width: 3em;
+            display: inline;
+            vertical-align: middle;
+          }
+          h5{
+            margin-top: 0.2em;
+            font-size: 1.6rem;
+            width: 12em;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+      .btn-chamada{
+        position: relative;
+        margin-top: 2em;
+        span{
+          font-size: 1.6em;
+          border: 1px solid #fff;
+          border-radius: 10px;
+          padding:  0.25em 0.5em;
+          margin: 0 0.5em;
+          background-color: rgba(46,46,46,0.9);
+          display: inline-block;
+          @include transition (all .10s ease-in);
+          &:hover{
+            background-color: rgba(255, 112, 67,0.9);
+          }
+          a{
+            color: #fff;
+            text-shadow: none;
+            &:hover{
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
   }
 }
 #intro-equipe{
@@ -110,12 +167,12 @@ body {
       z-index: 1;
       opacity: .20;
       background:
-        radial-gradient(circle farthest-side at 0% 50%,#7F7F7F 23.5%,rgba(0,0,0,0.2) 0)21px 30px,
+        radial-gradient(circle farthest-side at 0% 50%,#2b2b2b 23.5%,rgba(0,0,0,0.2) 0)21px 30px,
         radial-gradient(circle farthest-side at 0% 50%,#252525 24%,rgba(25,25,25,0) 0)19px 30px,
-        linear-gradient(#7F7F7F 14%,rgba(25,25,25,0) 0, rgba(25,25,25,0) 85%,#7F7F7F 0)0 0,
-        linear-gradient(150deg,#7F7F7F 24%,#252525 0,#252525 26%,rgba(25,25,25,0) 0,rgba(25,25,25,0) 74%,#252525 0,#252525 76%,#7F7F7F 0)0 0,
-        linear-gradient(30deg,#7F7F7F 24%,#252525 0,#252525 26%,rgba(25,25,25,0) 0,rgba(25,25,25,0) 74%,#252525 0,#252525 76%,#7F7F7F 0)0 0,
-        linear-gradient(90deg,#252525 2%,#7F7F7F 0,#7F7F7F 98%,#252525 0%)0 0 #7F7F7F;
+        linear-gradient(#7F7F7F 14%,rgba(25,25,25,0) 0, rgba(25,25,25,0) 85%,#2b2b2b 0)0 0,
+        linear-gradient(150deg,#2b2b2b 24%,#252525 0,#252525 26%,rgba(25,25,25,0) 0,rgba(25,25,25,0) 74%,#252525 0,#252525 76%,#2b2b2b 0)0 0,
+        linear-gradient(30deg,#2b2b2b 24%,#252525 0,#252525 26%,rgba(25,25,25,0) 0,rgba(25,25,25,0) 74%,#252525 0,#252525 76%,#2b2b2b 0)0 0,
+        linear-gradient(90deg,#252525 2%,#2b2b2b 0,#2b2b2b 98%,#252525 0%)0 0 #2b2b2b;
         background-size: 40px 60px;
       }
     background-image: url("/img/jpg/background/bg02.jpg");
@@ -137,7 +194,7 @@ body {
 #institucional {
   padding: 5rem 0 2rem;
   color: #1d1d1d;
-  background-color: #fffcf5;
+  background-color: #fff;
   .institucional-titulo{
     @extend .texto-maiusculo;
     @extend .font-jaapokki-enhance;
@@ -154,6 +211,98 @@ body {
     display: inline-block;
     float: right;
     text-align: left;
+  }
+}
+#funcionamento {
+  padding: 3rem 0 2rem;
+  color: #1d1d1d;
+  background-color: #fff;
+  .funcionamento-titulo{
+    @extend .texto-maiusculo;
+    margin-bottom: 1em;
+  }
+  .funcionamento-posts:first-child{
+      margin: 0 0 0 2.5em;
+    }
+  .funcionamento-posts:first-child{
+      margin: 0 2.5em 0 0;
+    }
+  .funcionamento-post{
+    display: inline-block;
+    text-align: justify;
+    margin: 0 2.5em;
+    img{
+      width: 20em;
+      height: 20em;
+      margin: 1em 0;
+    }
+    width: 20em;
+    .funcionamento-post-titulo{
+      display: inline;
+      font-family: arial;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.8em;
+    }
+    .funcionamento-post-texto{
+      font-family: arial;
+      font-weight: normal;
+      line-height: 1;
+      font-size: 1.2em;
+      display: inline;
+      text-align: justify;
+    }
+  }
+}
+#vantagens {
+  padding: 3rem 0 2rem;
+  color: #1d1d1d;
+  background-color: #fff;
+  .vantagens-titulo{
+    text-transform: uppercase;
+    @extend .texto-maiusculo;
+    margin-bottom: 1em;
+  }
+  .vantagens-posts:first-child{
+      margin: 0 0 0 2.5em;
+    }
+  .vantagens-posts:first-child{
+      margin: 0 2.5em 0 0;
+    }
+  .vantagens-post{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0.5em 1em 0.5em;
+    padding: 0 2em 2em 2em;
+    width: 23em;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    img{
+      width: 10em;
+      height: 10em;
+      margin: 1em auto;
+      display: block;
+    }
+    .vantagens-post-titulo{
+      font-family: $font-family-jaapokki-regular;
+      color: #f27023;
+      text-transform: lowercase;
+      font-size: 1.8em;
+    }
+    .vantagens-post-texto{
+      font-family: "roboto", Arial;
+      font-weight: normal;
+      line-height: 1.4;
+      font-size: 1.2em;
+    }
+    .vantagens-mais{
+      float: right;
+      text-shadow: 0px 0px 2px rgba(255,160,58,0.4);
+      color: #ffa03a;
+      font-size: 1.1em;
+
+      margin: 0 -0.8em -1em 0;
+    }
   }
 }
 #portfolio {
@@ -176,7 +325,7 @@ body {
   padding: 2rem 0;
   width: 100vw;
   color: #1d1d1d;
-  background-color: #fffcf5;
+  background-color: #fff;
   img {
     width:100%;
   }
@@ -243,7 +392,7 @@ body {
     background-size: auto 100%;
     height:20px;
   }
-  color: #fffcf5;
+  color: #fff;
   input,
   textarea {
     border-radius: 0;
@@ -255,7 +404,7 @@ body {
   input[type="submit"] {
     background-color:transparent;
     border: none;
-    color: #fffcf5;
+    color: #fff;
     float:right;
     font-size: 2em;
     cursor: pointer;
