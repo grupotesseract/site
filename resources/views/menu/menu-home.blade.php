@@ -13,7 +13,7 @@
       <a class="nav-link sliding-meio-fora" data-scroll href="#portfolio">{{ trans('global.menu_portfolio') }}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link sliding-meio-fora" data-scroll href="#equipe">{{ trans('global.menu_equipe') }}</a>
+      <a class="nav-link sliding-meio-fora" data-scroll href="/equipe">{{ trans('global.menu_equipe') }}</a>
     </li>
     <li class="nav-item">
       <a class="nav-link sliding-meio-fora" data-scroll href="#contato">{{ trans('global.menu_contato') }}</a>

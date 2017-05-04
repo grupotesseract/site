@@ -12,4 +12,9 @@ class EquipeController extends Controller
     return view('layouts.equipe');
   }
 
+  public function requerir_membro($id){
+    $membroEspecifico = Users::findById($id);
+    return view('layouts.equipe.individual', compact('membroEspecifico'));
+  }
+
 }
