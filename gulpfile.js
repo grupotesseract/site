@@ -1,4 +1,5 @@
-var elixir = require('laravel-elixir');
+let elixir = require('laravel-elixir');
+elixir.config.sourcemaps = false;
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +12,9 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
+elixir(mix => {
+    mix.sass('tesseract.scss');
+
     mix.styles([
         '/../../../node_modules/normalize.css/normalize.css',
         '/../../../node_modules/tether/dist/css/tether-theme-arrows',
@@ -31,10 +34,6 @@ elixir(function(mix) {
         'vendor/parallax.js',
         'vendor/wordrotate.js'
     ], 'public/js/tesseract.js');
-
-    mix.sass([
-    	'tesseract.scss'
-    ], 'public/css/tesseract.css');
 
     mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
 });
