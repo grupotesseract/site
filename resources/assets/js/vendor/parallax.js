@@ -404,7 +404,10 @@
 }(jQuery, window, document));
 
 $(document).ready(function() {
+  $('#parallax-boitata').parallax({imageSrc: '/img/jpg/portfolio/boitata.jpg'});
+  $('#parallax-acordo-rapido').parallax({imageSrc: '/img/jpg/portfolio/acordo-rapido.jpg'});
   $('#parallax-vivala').parallax({imageSrc: '/img/jpg/portfolio/vivala.jpg'});
+  $('#parallax-seus-direitos').parallax({imageSrc: '/img/jpg/portfolio/seus-direitos.jpg'});
   $('#parallax-grochfilmes').parallax({imageSrc: '/img/jpg/portfolio/grochfilmes.jpg'});
   $('#parallax-yes-we-quero').parallax({imageSrc: '/img/jpg/portfolio/yeswequero.jpg'});
   $('#parallax-broove').parallax({imageSrc: '/img/jpg/portfolio/broove.jpg'});
