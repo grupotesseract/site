@@ -11,16 +11,16 @@
           @include('home.intro.index')
         {{-- Fim da Seção INTRO --}}
 
-        {{-- Seção INSTITUCIONAL --}}
-          @include('home.institutional.index')
-        {{-- Fim da Seção INSTITUCIONAL --}}
-
         {{-- Seção PORTFOLIO --}}
           @include('home.portfolio.index')
         {{-- Fim da Seção PORTFOLIO --}}
 
+        {{-- Seção INSTITUCIONAL --}}
+          @include('home.institutional.index')
+        {{-- Fim da Seção INSTITUCIONAL --}}
+
         {{-- Seção EQUIPE --}}
-          @include('home.team.index')
+          {{--@include('home.team.index')--}}
         {{-- Fim da Seção EQUIPE --}}
 
         {{-- Seção CONTATO --}}
