@@ -6,15 +6,15 @@
   </a>
 
   <ul class="nav navbar-nav pull-right ">
+    <li class="nav-item">
+      <a class="nav-link sliding-meio-fora" data-scroll href="#portfolio">portifólio{{-- trans('global.menu_portfolio') --}}<span class="sr-only">(current)</span></a>
+    </li>
     <li class="nav-item active">
-      <a class="nav-link sliding-meio-fora" data-scroll href="#institucional">{{ trans('global.menu_institucional') }} <span class="sr-only">(current)</span></a>
+      <a class="nav-link sliding-meio-fora" data-scroll href="#institucional">{{ trans('global.menu_institucional') }}</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link sliding-meio-fora" data-scroll href="#portfolio">{{ trans('global.menu_portfolio') }}</a>
-    </li>
-    <li class="nav-item">
+    {{--<li class="nav-item">
       <a class="nav-link sliding-meio-fora" data-scroll href="#equipe">{{ trans('global.menu_equipe') }}</a>
-    </li>
+    </li>--}}
     <li class="nav-item">
       <a class="nav-link sliding-meio-fora" data-scroll href="#contato">{{ trans('global.menu_contato') }}</a>
     </li>

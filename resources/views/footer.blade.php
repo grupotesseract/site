@@ -11,18 +11,33 @@
 	              	<div class="row text-xs-center">
 		                <ul class="inline-social-media">
 		                	<li class="inline-block-social-media">
-		                		<a class="pl-1 pr-1" href="{{ env('SOCIAL_MEDIA_GITHUB') }}" target="_blank">
-		                			<i class="fa fa-1-5x fa-github"></i>
+		                		<a href="https://github.com/grupotesseract" target="_blank">
+		                			<i class="fa fa-1-9x fa-github"></i>
 		                		</a>
 		                    </li>
 		                    <li class="inline-block-social-media">
-		                    	<a class="pl-1 pr-1" href="{{ env('SOCIAL_MEDIA_FACEBOOK') }}" target="_blank">
-		                    		<i class="fa fa-1-5x fa-facebook"></i>
+		                    	<a href="https://www.facebook.com/grupotesseract" target="_blank">
+		                    		<i class="fa fa-1-9x fa-facebook"></i>
 		                    	</a>
 		                    </li>
 		                    <li class="inline-block-social-media">
-		                    	<a class="pl-1 pr-1" href="{{ env('SOCIAL_MEDIA_LINKEDIN') }}" target="_blank">
-		                    		<i class="fa fa-1-5x fa-linkedin"></i>
+		                		<a href="https://twitter.com/grupotesseract" target="_blank">
+		                			<i class="fa fa-1-9x fa-twitter"></i>
+		                		</a>
+		                    </li>
+		                    <li class="inline-block-social-media">
+		                		<a href="https://www.instagram.com/grupotesseract/" target="_blank">
+		                			<i class="fa fa-1-9x fa-instagram"></i>
+		                		</a>
+		                    </li>		                    
+		                    <li class="inline-block-social-media">
+		                		<a href="https://www.behance.net/grupotesseract" target="_blank">
+		                			<i class="fa fa-1-9x fa-behance-square"></i>
+		                		</a>
+		                    </li>
+		                    <li class="inline-block-social-media">
+		                    	<a href="https://www.linkedin.com/company/grupotesseract/" target="_blank">
+		                    		<i class="fa fa-1-9x fa-linkedin"></i>
 		                    	</a>
 		                    </li>
 		                </ul>
