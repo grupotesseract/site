@@ -7,12 +7,12 @@
   <section id="portfolio" class="container-fluid">
     <div id="parallax-boitata" class="row parallax text-center padding-4">
         <div class="info-projeto container">
-          <h3 class="titulo-trabalho">Coletivo Boitatá</h2>
+          <h3 class="titulo-trabalho fonte-chumbo">Coletivo Boitatá</h2>
           <div class="links row">
-            <a class="itens-trabalho col-xs-12" target="_blank" href="https://github.com/grupotesseract/boitata">
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/boitata">
               Github
             </a>
-            <a class="itens-trabalho col-xs-12" target="_blank" href="http://coletivoboitata.com.br/">
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="http://coletivoboitata.com.br/">
               Site
             </a>
           </div>
@@ -20,12 +20,12 @@
     </div>
     <div id="parallax-acordo-rapido" class="row parallax text-center padding-4">
         <div class="info-projeto container">
-          <h3 class="titulo-trabalho">Acordo Rápido</h2>
+          <h3 class="titulo-trabalho fonte-chumbo">Acordo Rápido</h2>
           <div class="links row">
-            <a class="itens-trabalho col-xs-12" target="_blank" href="https://github.com/grupotesseract/acordorapido2">
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/acordorapido2">
               Github
             </a>
-            <a class="itens-trabalho col-xs-12" target="_blank" href="http://acordorapido.com.br/Home">
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="http://acordorapido.com.br/Home">
               Site
             </a>
           </div>
@@ -52,9 +52,9 @@
     </div>
     <div id="parallax-seus-direitos" class="row parallax text-center padding-4">
         <div class="info-projeto container">
-          <h3 class="titulo-trabalho">Seus Direitos</h2>
+          <h3 class="titulo-trabalho fonte-chumbo">Seus Direitos</h2>
           <div class="links row">
-            <a class="itens-trabalho col-xs-12" target="_blank" href="https://github.com/grupotesseract/seus-direitos-webapi">
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/seus-direitos-webapi">
               Github
             </a>
           </div>
