@@ -7,7 +7,7 @@
 
   <ul class="nav navbar-nav pull-right ">
     <li class="nav-item">
-      <a class="nav-link sliding-meio-fora" data-scroll href="#portfolio">portifólio{{-- trans('global.menu_portfolio') --}}<span class="sr-only">(current)</span></a>
+      <a class="nav-link sliding-meio-fora" data-scroll href="#portfolio">portfólio{{-- trans('global.menu_portfolio') --}}<span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item active">
       <a class="nav-link sliding-meio-fora" data-scroll href="#institucional">{{ trans('global.menu_institucional') }}</a>
