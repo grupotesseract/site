@@ -15,6 +15,9 @@ body {
   color: white;
   background-color: #1D1D1D;
   overflow-x: hidden;
+  .parallax-mirror img {
+      filter: blur(3px);
+  }
 }
 
 #menu-principal{
@@ -128,6 +131,7 @@ body {
   }
   .fonte-chumbo {
     color: #222222!important;
+    text-shadow: 0px 3px #FFF;
   }
   .parallax {
     font-size: 2em;
