@@ -94,7 +94,8 @@
       ga('send', 'pageview');
     </script>
 
-
+    {{-- Jivosite --}}
+    <script src="//code.jivosite.com/widget.js" jv-id="dgbdpcS1d8" async></script>
 
   </head>
   <body class="@yield('body-classes')">
