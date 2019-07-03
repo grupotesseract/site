@@ -67,13 +67,13 @@
         <div class="info-projeto container">
           <h3 class="titulo-trabalho fonte-chumbo">Gerenciador de cupons Vestylle</h2>
           <div class="links row">
-            <div class="col xs-12">
-              Github&nbsp;
-              <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/vestylle-pwa">
+            <div class="col xs-12 fonte-chumbo">
+              Github:&nbsp;
+              <a class="itens-trabalho fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/vestylle-pwa">
                 PWA&nbsp;
               </a>
               e&nbsp;
-              <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/vestylle-native">
+              <a class="itens-trabalho fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/vestylle-native">
                 Nativo
               </a>
             </div>
