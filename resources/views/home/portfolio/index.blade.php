@@ -18,19 +18,6 @@
           </div>
         </div>
     </div>
-    <div id="parallax-acordo-rapido" class="row parallax text-center padding-4">
-        <div class="info-projeto container">
-          <h3 class="titulo-trabalho fonte-chumbo">Acordo Rápido</h2>
-          <div class="links row">
-            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/acordorapido2">
-              Github
-            </a>
-            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="http://acordorapido.com.br/Home">
-              Site
-            </a>
-          </div>
-        </div>
-    </div>
     <div id="parallax-vivala" class="row parallax text-center padding-4">
         <div class="info-projeto container">
           <h3 class="titulo-trabalho">Vivalá</h2>
@@ -45,6 +32,52 @@
               Backend API usando Laravel
             </a>
             <a class="itens-trabalho col-xs-12" target="_blank" href="https://vivala.com.br">
+              Site
+            </a>
+          </div>
+        </div>
+    </div>
+    <div id="parallax-acordo-rapido" class="row parallax text-center padding-4">
+        <div class="info-projeto container">
+          <h3 class="titulo-trabalho fonte-chumbo">Acordo Rápido</h2>
+          <div class="links row">
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/acordorapido2">
+              Github
+            </a>
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="http://acordorapido.com.br/Home">
+              Site
+            </a>
+          </div>
+        </div>
+    </div>
+    <div id="parallax-chica-brasil" class="row parallax text-center padding-4">
+        <div class="info-projeto container">
+          <h3 class="titulo-trabalho fonte-chumbo">Chica Brasil</h2>
+          <div class="links row">
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/chica-brasil">
+              Github
+            </a>
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="#todo">
+              Site
+            </a>
+          </div>
+        </div>
+    </div>
+    <div id="parallax-vestylle" class="row parallax text-center padding-4">
+        <div class="info-projeto container">
+          <h3 class="titulo-trabalho fonte-chumbo">Gerenciador de cupons Vestylle</h2>
+          <div class="links row">
+            <div class="col xs-12">
+              Github&nbsp;
+              <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/vestylle-pwa">
+                PWA&nbsp;
+              </a>
+              e&nbsp;
+              <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/vestylle-native">
+                Nativo
+              </a>
+            </div>
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="#todo">
               Site
             </a>
           </div>
