@@ -405,8 +405,10 @@
 
 $(document).ready(function() {
   $('#parallax-boitata').parallax({imageSrc: '/img/jpg/portfolio/boitata.jpg'});
-  $('#parallax-acordo-rapido').parallax({imageSrc: '/img/jpg/portfolio/acordo-rapido.jpg'});
   $('#parallax-vivala').parallax({imageSrc: '/img/jpg/portfolio/vivala.jpg'});
+  $('#parallax-acordo-rapido').parallax({imageSrc: '/img/jpg/portfolio/acordo-rapido.jpg'});
+  $('#parallax-chica-brasil').parallax({imageSrc: '/img/jpg/portfolio/chica-brasil.jpg'}); // TODO
+  $('#parallax-vestylle').parallax({imageSrc: '/img/jpg/portfolio/vestylle.jpg'}); // TODO
   $('#parallax-seus-direitos').parallax({imageSrc: '/img/jpg/portfolio/seus-direitos.jpg'});
   $('#parallax-grochfilmes').parallax({imageSrc: '/img/jpg/portfolio/grochfilmes.jpg'});
   $('#parallax-yes-we-quero').parallax({imageSrc: '/img/jpg/portfolio/yeswequero.jpg'});
