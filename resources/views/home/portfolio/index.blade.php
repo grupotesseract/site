@@ -26,7 +26,7 @@
               documentação
             </a>--}}
             <a class="itens-trabalho col-xs-12" target="_blank" href="https://github.com/somosvivala/vivala-frontend">
-              Frontend usando React
+              Frontend React
             </a>
             <a class="itens-trabalho col-xs-12" target="_blank" href="https://github.com/somosvivala/vivala-backend-api">
               Backend API usando Laravel
@@ -44,7 +44,7 @@
             <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/acordorapido2">
               Github
             </a>
-            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="http://acordorapido.com.br/Home">
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://acordorapido.net.br">
               Site
             </a>
           </div>
@@ -57,8 +57,8 @@
             <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://github.com/grupotesseract/chica-brasil">
               Github
             </a>
-            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="#todo">
-              Site
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://chicabrasil.com.br/">
+              E-commerce
             </a>
           </div>
         </div>
@@ -77,7 +77,7 @@
                 Nativo
               </a>
             </div>
-            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="#todo">
+            <a class="itens-trabalho col-xs-12 fonte-chumbo" target="_blank" href="https://vestylle.grupotesseract.com.br/">
               Site
             </a>
           </div>
